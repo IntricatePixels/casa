@@ -1,0 +1,203 @@
+section.proven-process-wrapper {
+  min-height: 460px;
+  overflow-x: hidden;
+}
+
+ul.proven-process li img {
+  height: auto;
+  width: 110px;
+}
+
+ul.proven-process li h2 {
+  font-size: 18px;
+}
+
+ul.proven-process {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul.proven-process li:nth-child(odd),
+ul.proven-process li:nth-child(even) {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+// proven process vertical
+.vert-icon {
+  height: 100px;
+  width: auto;
+}
+
+.center-bar {
+  position: relative;
+}
+
+.center-bar::before {
+  content: " ";
+  background: $mimeo-blue;
+  width: 1px;
+  height: 90%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.dot-right::after,
+.dot-left::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #007ab7;
+  position: absolute;
+  top: 50%;
+  border: 3px solid white;
+  border-radius: 15px;
+}
+
+.dot-right::after {
+  right: -7px;
+}
+
+.dot-left::after {
+  left: -7px;
+}
+
+// colour swap
+section.proven-process-wrapper.mimeo-green {
+  color: $mimeo-green;
+  background-color: $mimeo-green-light;
+
+  ul.proven-process::after {
+    background: $mimeo-green;
+  }
+
+  ul.proven-process li h2 {
+    color: $mimeo-green;
+  }
+
+  ul.proven-process li:nth-child(odd)::after,
+  ul.proven-process li:nth-child(even)::before {
+    background: $mimeo-green;
+  }
+}
+
+section.proven-process-wrapper.mimeo-blue {
+  color: $mimeo-blue;
+  background-color: $mimeo-blue-light;
+
+  ul.proven-process::after {
+    background: $mimeo-blue;
+  }
+
+  ul.proven-process li h2 {
+    color: $mimeo-blue;
+  }
+
+  ul.proven-process li:nth-child(odd)::after,
+  ul.proven-process li:nth-child(even)::before {
+    background: $mimeo-blue;
+  }
+}
+
+section.proven-process-wrapper.white {
+  color: $mimeo-blue;
+
+  ul.proven-process::after {
+    background: $mimeo-blue;
+  }
+
+  ul.proven-process li h2 {
+    color: $mimeo-blue;
+  }
+
+  ul.proven-process li:nth-child(odd)::after,
+  ul.proven-process li:nth-child(even)::before {
+    background: $mimeo-blue;
+  }
+}
+
+section.proven-process-wrapper.mimeo-purple {
+  color: $mimeo-purple;
+  background-color: $mimeo-purple-light;
+
+  ul.proven-process::after {
+    background: $mimeo-purple;
+  }
+
+  ul.proven-process li h2 {
+    color: $mimeo-purple;
+  }
+
+  ul.proven-process li:nth-child(odd)::after,
+  ul.proven-process li:nth-child(even)::before {
+    background: $mimeo-purple;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  ul.proven-process li:nth-child(odd),
+  ul.proven-process li:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    max-width: 240px;
+  }
+
+  ul.proven-process li:nth-child(odd) {
+    top: -77px;
+  }
+
+  ul.proven-process li:nth-child(even) {
+    flex-direction: column-reverse;
+    top: 98px;
+  }
+
+  ul.proven-process {
+    flex-direction: row;
+  }
+
+  ul.proven-process li:nth-child(odd)::after,
+  ul.proven-process li:nth-child(even)::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 10px;
+    background: #007ab7;
+    position: relative;
+    z-index: 2;
+    border: 3px solid white;
+  }
+
+  ul.proven-process li:nth-child(odd)::after {
+    top: 8px;
+  }
+
+  ul.proven-process li:nth-child(even)::before {
+    top: -167px;
+  }
+
+  ul.proven-process::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #007ab7;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+}

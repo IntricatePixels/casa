@@ -1,0 +1,122 @@
+.nav-tabs {
+  text-align: center;
+}
+
+ul#mimeoTab {
+  border-bottom: 0;
+}
+
+.tablinks h2 {
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+ul#mimeoTab.nav-tabs .nav-link::after {
+  content: url("../../images/arrow-right-long-regular.svg");
+  position: absolute;
+  right: 10px;
+  top: 0;
+  height: 10px;
+  width: 20px;
+}
+
+ul#mimeoTab.nav-tabs .nav-link.active {
+  border: 1px solid transparent !important;
+  background-color: transparent !important;
+
+  &::after {
+    content: url("../../images/arrow-right-long-regular-active.svg");
+    position: absolute;
+    right: 10px;
+    top: 0;
+    height: 10px;
+    width: 20px;
+  }
+}
+
+.digital-tab a.btn-outline {
+  color: $mimeo-purple;
+}
+
+.print-tab a.btn-outline {
+  color: $mimeo-blue;
+}
+
+.marketplace-tab a.btn-outline {
+  color: $mimeo-green;
+}
+
+li.nav-item.marketplace-tab {
+  border-bottom: 3px solid $mimeo-green;
+
+  a {
+    color: $font-grey;
+    font-size: 36px;
+  }
+}
+
+li.nav-item.digital-tab {
+  border-bottom: 3px solid $mimeo-purple;
+
+  a {
+    color: $font-grey;
+    font-size: 36px;
+  }
+}
+
+li.nav-item.print-tab {
+  border-bottom: 3px solid $mimeo-blue;
+
+  a {
+    color: $font-grey;
+    font-size: 36px;
+  }
+}
+
+li.nav-item.print-tab a:hover,
+li.nav-item.marketplace-tab a:hover,
+li.nav-item.digital-tab a:hover {
+  box-shadow: rgba(99 99  99 / 20%) 0 2px 8px 0;
+}
+
+li.nav-item.print-tab a:hover > h2 {
+  color: $mimeo-blue;
+}
+
+li.nav-item.marketplace-tab a:hover > h2 {
+  color: $mimeo-green;
+}
+
+li.nav-item.digital-tab a:hover > h2 {
+  color: $mimeo-purple;
+}
+
+ul#mimeoTab_horizontal::after {
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: -32px;
+  box-shadow: 0 -5px 8px -3px #88888836 inset;
+}
+
+li.nav-item.digital-tab,
+li.nav-item.print-tab,
+li.nav-item.marketplace-tab {
+  z-index: 999;
+  position: relative;
+  top: 9px;
+  background-color: white;
+}
+
+h2.resources {
+  font-size: $font-size-normal;
+  font-weight: 600;
+}
+
+.searchpost-cat {
+  background: #e0e0e0;
+  text-align: center;
+  padding: 5px;
+  text-transform: capitalize;
+}

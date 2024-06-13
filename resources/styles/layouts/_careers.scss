@@ -1,0 +1,47 @@
+img.careers-icon,
+img.sustainable-icon {
+  width: auto;
+  height: 110px;
+}
+
+.sustainable-inner {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.careers-block {
+  text-align: center;
+}
+
+.careers-block h2,
+.sustainable-inner h2 {
+  font-size: $font-size-normal;
+  font-weight: 600;
+}
+
+.sustainable-inner p {
+  margin: 0;
+}
+
+.careers-block:nth-child(odd)::after {
+  content: "";
+}
+
+@include media-breakpoint-up(lg) {
+  .sustainable-inner {
+    flex-direction: row;
+  }
+
+  .careers-block:nth-child(odd)::after {
+    display: block;
+    width: 150px;
+    height: 1px;
+    background: $mimeo-blue;
+    position: absolute;
+    right: -75px;
+    top: 50%;
+  }
+}
