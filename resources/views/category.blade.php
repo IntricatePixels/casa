@@ -77,7 +77,7 @@
                             "ul_class" => "",
                             "li_class" => ""
                           );
-                        echo paginate_links_as_bootstrap( $args );
+                        //echo paginate_links_as_bootstrap( $args );
                         ?>
                     </div>
                 </div>
