@@ -56,15 +56,15 @@
                               <h4 class="p-0 mb-2 fs-5 font-bold @if ( get_row_index() != 1 ) @endif">{!! $title !!}</h4>
                             @endif
                           
-                            <div class="pe-xl-5 me-xl-5 mb-4">{{ $descr }}</div>
+                            <div class="mb-4">{{ $descr }}</div>
                             @if ($link)
                                 @php
                                     $link_url = $link['url'];
                                     $link_title = $link['title'];
                                     $link_target = $link['target'] ? $link['target'] : '_self';
                                 @endphp
-                                <a class="blue-link right-arrow" href="@php echo esc_url( $link_url ) @endphp"
-                                target="@php echo esc_attr( $link_target ) @endphp">@php echo esc_html( $link_title ) @endphp</a>
+                                <a class="blue-link right-arrow mt-5" href="@php echo esc_url( $link_url ) @endphp"
+                                target="@php echo esc_attr( $link_target ) @endphp">@php echo esc_html( $link_title ) @endphp @asset('images/arrow-right-long-regular.svg')</a>
                             @endif
                           </div>
                         </div>

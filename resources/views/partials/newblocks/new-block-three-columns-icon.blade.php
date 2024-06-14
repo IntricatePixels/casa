@@ -10,7 +10,7 @@
                     {{ the_sub_field('header_main') }}</h2>
             @endif
             @if ($sub_header)
-                <h3 style="color: #39404a;">{{ $sub_header }}</h3>
+                <h3 style="color: #81755f;">{{ $sub_header }}</h3>
             @endif
             @if (get_sub_field('description'))
                 <p class="block-subheader mt-3 mb-45">{{ the_sub_field('description') }}</p>

@@ -22,10 +22,12 @@
             
 
         </div>
-        <div class="d-flex align-items-center justify-content-end">
+        <!-- <div class="d-flex align-items-center justify-content-end">
             <a class="btn btn-outline-secondary text-white border border-white me-sm-2 py-0 px-3 d-flex align-items-center" href="#contact"
                 id="signUpButtonLink">
-                <span>Contact Us</span>
+                <span> 
+                    Kontakt
+                </span>
             </a>
          
             <button id="mobileNavToggleBtn" class="navbar-toggler ms-2 pe-0 collapsed" type="button"
@@ -34,7 +36,7 @@
             </button>
             
         </div>
-       
+        -->
     </div>
 </nav>
 {{-- Display Yoast Breadcrumb everywhere but main Mimeo Big homepage --}}

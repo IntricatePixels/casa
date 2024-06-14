@@ -104,7 +104,7 @@ a {
 }
 
 .bg-gray {
-  background-color: #39404a;
+  background-color: #81755f;
 }
 
 // Image alignment for Blog
@@ -223,30 +223,34 @@ section.block.new:not(.block-in-numbers) h3 {
 section.new.block-threecolumns-icons h3 {
   text-align: left;
   padding-left: 0;
-  color: #39404a;
+  color: #81755f;
   font-weight: 600;
 }
 
 section .blue-link {
   text-decoration: none;
-  text-transform: uppercase;
-  color: #2f77a7;
+  text-transform: capitalize;
+  color: #f0eadc;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: #81755f;
+  
+  background-color: #81755f;
+  padding: 8px 22px 8px 12px;
+  border-radius: 6px;
 }
 
 section .blue-link:hover {
-  color: #3cb1ff;
+  color: #fff;
   text-decoration: none;
 }
 
-section .blue-link.right-arrow:after {
-  content: "\f054";
-  margin-left: 10px;
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  font-size: 10px;
-  position: relative;
-  top: -2px;
+section .blue-link::after {
+  content: url("../../images/arrow-right-long-regular.svg");
+  position: absolute;
+  right: 10px;
+  top: 0;
+  height: 10px;
+  width: 20px;
 }
 
 section.breadcrumb {
@@ -613,4 +617,13 @@ ul.data-privacy-links li:last-child a::after {
   height: 1px;
   top: auto;
   overflow: hidden;
+}
+
+.home .block-image-with-list > .container {
+  border-bottom: 1px solid #81755f;
+  padding-bottom: 100px;
+}
+
+.home #list-6 > .container {
+  border-bottom: none;
 }

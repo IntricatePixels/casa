@@ -73,7 +73,7 @@
 
                         @if ($mimeo_current_lang_id == '1')
                             <p class="contact-form-privacy"
-                                style="margin: 20px 0 0; text-align: left; color: #39404a; font-size: 12px;">
+                                style="margin: 20px 0 0; text-align: left; color: #81755f; font-size: 12px;">
                                 By submitting this form, you hereby accept that your personal data will be collected
                                 and processed for contact purposes. For example, by sharing your name and contact
                                 information, we

@@ -57,7 +57,7 @@
                                 @endif
 
                                 @if ($descr)
-                                  <div class="pe-xl-5 me-xl-5 mb-4">{!! $descr !!}</div>
+                                  <div class="mb-4">{!! $descr !!}</div>
                                 @endif
                               </div>
                                 </div>

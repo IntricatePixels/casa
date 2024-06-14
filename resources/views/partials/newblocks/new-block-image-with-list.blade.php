@@ -6,7 +6,7 @@
       $swap_sides = get_sub_field('swap_sides');
     @endphp
     
-    <section class="block-image-with-list px-lg-4 px-4 px-md-0 py-5 my-5 in-page-section" id="list-{{ get_row_index() }}" data-section-name="">
+    <section class="block-image-with-list px-lg-4 px-4 px-md-0 py-5 my-0 in-page-section" id="list-{{ get_row_index() }}" data-section-name="" style="background-color: #f4f0f3;">
         <div class="container">
           @if ($header)
           <div class="row justify-content-lg-center text-md-center mb-5 mb-lg-0 pb-5">
@@ -29,7 +29,7 @@
                   <h2 class="hero-eyebrow text-start">{{ the_sub_field('panel_eyebrow') }}</h2>
                 @endif
                 
-                <h3 class="font-black fs-1 pb-5 pe-lg-5 me-lg-5">{{ the_sub_field('panel_header') }}</h3>
+                <h3 class="font-black fs-1 pb-5">{{ the_sub_field('panel_header') }}</h3>
 
                 @php $grid = get_sub_field('grid'); @endphp
                 @if ($grid && count($grid) > 0)
@@ -45,15 +45,21 @@
                             @if ($title)
                               <h4 class="p-0 mb-2 fs-5 font-bold @if ( get_row_index() != 1 ) pt-3 @endif">{!! $title !!}</h4>
                             @endif
-                            <div class="pe-xl-5 me-xl-5 mb-4">{{ $descr }}</div>
+                            <div class="px-lg-5 px-3 mb-5">{{ $descr }}</div>
                             @if ($link)
                                 @php
                                     $link_url = $link['url'];
                                     $link_title = $link['title'];
                                     $link_target = $link['target'] ? $link['target'] : '_self';
                                 @endphp
-                                <a class="blue-link right-arrow" href="{{ esc_url($link_url) }}"
-                                target="{{ esc_attr($link_target) }}">{{ esc_html($link_title) }}</a>
+                                <a class="blue-link right-arrow mt-5 pe-5 position-relative" href="{{ esc_url($link_url) }}"
+                                target="{{ esc_attr($link_target) }}">{{ esc_html($link_title) }}<img src="@asset('images/arrow-right-long-regular.svg')" style="height: 18px;
+    position: absolute;
+    top: 8px;
+    right: -65px;" /></a>
+
+                               
+
                             @endif
                           </div>
                       @endwhile
