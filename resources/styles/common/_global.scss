@@ -627,3 +627,36 @@ ul.data-privacy-links li:last-child a::after {
 .home #list-6 > .container {
   border-bottom: none;
 }
+
+section.block-form p {
+color: white;
+}
+
+section.block-form label { display: none;}
+
+/* Custom styles for input fields */
+input.form-control, textarea.form-control {
+  background-color: transparent; /* Transparent background */
+  color: #f0eadc !important; /* Text color for input text */
+}
+
+/* Style placeholder text */
+::placeholder {
+  color: #f0eadc !important; /* Placeholder text color */
+  opacity: 1; /* Full opacity */
+}
+
+
+/* CSS */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    /* Change the border color */
+    border-color: #80bdff; /* Example focus border color */
+    background-color: transparent;
+    /* Change the text color */
+    color: #fff; /* Example focus text color */
+    
+    /* Optional: Add a box shadow for visual effect */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Example focus box shadow */
+}

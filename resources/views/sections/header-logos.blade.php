@@ -5,7 +5,7 @@
 
 @if ($logoUrl)
     <!-- <a href="{{ esc_url(home_url('/')) }}" rel="home"> -->
-    <a href="/" rel="home">
+    <a href="https://stingray-app-noier.ondigitalocean.app/" rel="home">
         <img src="{{ esc_url($logoUrl) }}" alt="{{ esc_attr(get_bloginfo('name')) }}">
     </a>
 @else

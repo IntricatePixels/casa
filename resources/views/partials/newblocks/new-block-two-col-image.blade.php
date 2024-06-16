@@ -37,12 +37,16 @@
                         @endforeach
                     </div>
                 </div>
-                <div
-                    class="{{ $swap_sides ? 'col-lg-6 order-1 p-0 mb-3 mb-md-0' : 'col-lg-6 order-1 order-lg-2 p-0' }}">
-                    @if ($image)
-                        {!! wp_get_attachment_image($image, 'full', '', ['class' => 'object-fit', 'loading' => 'lazy']) !!}
-                    @endif
-                </div>
+                <div class="{{ $swap_sides ? 'col-lg-6 order-1 p-0 mb-3 mb-md-0' : 'col-lg-6 order-1 order-lg-2 p-0' }}">
+    @if ($image)
+        <?php
+        $image_src = wp_get_attachment_image_src($image, 'full');
+        $image_url = $image_src[0];
+        ?>
+        <img src="{{ $image_url }}" class="object-fit" loading="lazy">
+    @endif
+</div>
+
             </div>
         </div>
     </section>
