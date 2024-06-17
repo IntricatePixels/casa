@@ -8,13 +8,12 @@
               @php $counter = 1 @endphp
               @while (have_rows('in_page_links_repeater'))
                   @php the_row() @endphp
-                  <div class="col py-2 my-2 border-end border-white">
+                  <div class="col py-2 my-2 border-end border-secondary">
                       @if (get_sub_field('link_name'))
                           @php $link_url = get_sub_field('link_url') @endphp
                           <div class="ps-3 text-white">
-                              <a class="text-white" style="display:inline-block; width: 100%;"
+                              <a class="text-white" style="display:inline-block; width: 100%; font-size: 14px;"
                                   href="@php echo esc_url($link_url) @endphp">
-                                  0@php echo $counter  @endphp <br>
                                   @php the_sub_field('link_name') @endphp
                               </a>
                           </div>
