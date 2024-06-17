@@ -1,23 +1,43 @@
-<footer class="content-info pt-5">
-    <div class="container">
-        <div class="row px-xs-4">
-           
-            <div class="col-lg-4 mb-3">
-                @php dynamic_sidebar('second-footer-widget-area') @endphp
+<footer class="pt-0 bg-casa-light">
+    <img src="@asset('images/map_lago.jpg')" alt="Map" width="1000" height="500" class="object-fit" style="height: 500px;">
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Left Column for WordPress Menu -->
+            <div class="col-lg-3">
+                @if (is_active_sidebar('sidebar-footer'))
+                @php dynamic_sidebar('sidebar-footer') @endphp
+
+                @endif
             </div>
-            <div class="col-lg-3 mb-0">
-                @php dynamic_sidebar('third-footer-widget-area') @endphp
+
+            <!-- Right Column for Newsletter Signup and Social Media Icons -->
+            <div class="col-lg-9 d-flex justify-content-end flex-column align-items-end">
+                <div class="card border-0 bg-transparent">
+                    <div class="card-body">
+                        <h3>Newsletter</h3>
+                        <!-- Replace with your Contact Form 7 shortcode -->
+                        <?php echo do_shortcode('[contact-form-7 id="eb7b80d" title="Newsletter Sign Up"]'); ?>
+                    </div>
+                </div>
+<br>
+                <div class="mt-3">
+                    <!-- Social Media Icons with Links -->
+                    <a href="https://facebook.com/your-page" class="btn btn-outline-primary me-2">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/your-page" class="btn btn-outline-primary">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
             </div>
-            <!-- <div class="col-lg-4">
-        @php dynamic_sidebar('fourth-footer-widget-area') @endphp
-      </div> -->
         </div>
     </div>
+
     <div class="footer-copyright px-5 mt-5">
-      <div class="container">
-        <div class="row p-0">
-          <p>&copy; All rights reserved.</p>
+        <div class="container">
+            <div class="row p-0">
+                <p>&copy; All rights reserved.</p>
+            </div>
         </div>
-      </div>
     </div>
 </footer>

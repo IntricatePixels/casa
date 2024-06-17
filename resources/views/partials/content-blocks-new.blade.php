@@ -35,5 +35,6 @@
         @include('partials/newblocks/new-block-resources-related-videos')
         @include('partials/newblocks/new-block-header-subtext-btn')
         @include('partials/newblocks/new-block-two-col-image')
+        @include('partials/explorer/explorer')
     @endwhile
 @endif

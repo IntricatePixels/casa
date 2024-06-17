@@ -150,6 +150,56 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_666fa36f0854e": {
+                    "key": "layout_666fa36f0854e",
+                    "name": "explorer",
+                    "label": "New - Explorer",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_666fa36f0854f",
+                            "label": "Header",
+                            "name": "header",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_666fa36f08550",
+                            "label": "Subheader",
+                            "name": "sub_header",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_65ccb1ea7fa92": {
                     "key": "layout_65ccb1ea7fa92",
                     "name": "case_study",
@@ -6297,5 +6347,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1718303183
+    "modified": 1718592530
 }
