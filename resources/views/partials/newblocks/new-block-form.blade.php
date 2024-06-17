@@ -25,9 +25,7 @@
                 </div>
 
                 <!-- Right Column -->
-                <div class="col-12 text-center mt-4">
-               
-                   
+                <div class="col-lg-6 col-12 text-center mt-4">     
                     <p class="my-3">@php the_sub_field('form_description') @endphp</p>
                     @php echo do_shortcode($gravity_forms_shortcode_us) @endphp
                 </div>
