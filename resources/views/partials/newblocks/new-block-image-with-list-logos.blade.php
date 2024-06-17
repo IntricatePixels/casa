@@ -29,7 +29,7 @@
                 @endif
                 
                 @if (get_sub_field('panel_header'))
-                  <h3 class="font-black fs-1 pb-5 pe-lg-5 me-lg-5">{!! the_sub_field('panel_header') !!}</h3>
+                  <h3 class="fs-1 pb-5 pe-lg-5 me-lg-5">{!! the_sub_field('panel_header') !!}</h3>
                 @endif
 
                 @php 

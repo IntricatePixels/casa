@@ -64,7 +64,7 @@
   <div class="container">
     <div class="d-lg-flex flex-column justify-content-lg-center text-md-center">
       <h2 class="hero-eyebrow pb-3">Mimeo Locations</h2>
-      <h3 class="font-black fs-1 pb-5">Mimeo is a Global Company <br class="desktop-break">with Locations Across the Globe.</h3>
+      <h3 class="fs-1 pb-5">Mimeo is a Global Company <br class="desktop-break">with Locations Across the Globe.</h3>
     </div>
     <div class="row g-5">
       <div class="col-md-6">

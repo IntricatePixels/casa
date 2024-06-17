@@ -29,7 +29,7 @@
                   <h2 class="hero-eyebrow text-start">{{ the_sub_field('panel_eyebrow') }}</h2>
                 @endif
                 
-                <h3 class="font-black fs-1 pb-5">{{ the_sub_field('panel_header') }}</h3>
+                <h3 class="fs-1 pb-5">{{ the_sub_field('panel_header') }}</h3>
 
                 @php $grid = get_sub_field('grid'); @endphp
                 @if ($grid && count($grid) > 0)
