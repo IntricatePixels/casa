@@ -28,7 +28,7 @@
                     <a href="{{ esc_url(home_url('/')) }}kontakt/" title="Kontakt"
                         class="header-search-icon px-md-2">
                         <img class="header-contact-icon no-lazy" width="16" height="12" src="@asset('images/icon_header_envelope_new.svg')"
-                            alt="Kontakt mimeo"><span class="d-none d-md-block ps-1 text-white">Kontakt</span></a>
+                            alt="Kontakt mimeo" style="width: 16px;"><span class="d-none ps-1 text-white">Kontakt</span></a>
                 @else
                     <a href="{{ esc_url(home_url('/')) }}contact/" class="header-contact-icon px-md-2"
                         title="Contact Us">
