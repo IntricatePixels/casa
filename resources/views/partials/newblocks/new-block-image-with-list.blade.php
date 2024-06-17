@@ -67,7 +67,7 @@
                         $link_title = $link['title'];
                         $link_target = $link['target'] ? $link['target'] : '_self';
                     @endphp
-                    <a class="btn btn-brown text-white mt-3 px-5" href="{{ esc_url($link_url) }}"
+                    <a class="blue-link right-arrow mt-5 pe-5 position-relative" href="{{ esc_url($link_url) }}"
                         target="{{ esc_attr($link_target) }}">{{ esc_html($link_title) }}</a>
                 @endif
 
