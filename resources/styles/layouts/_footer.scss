@@ -78,6 +78,15 @@ footer {
     padding: 7px 0;
     font-weight: 300;
   }
+
+  input {
+    color: #222824;
+    background-color: #c9c4b3;
+ 
+    &::placeholder {
+      color: #222824;
+    }
+  }
 }
 
 .widget_nav_menu ul {

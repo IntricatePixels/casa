@@ -95,8 +95,11 @@ header h2 {
   font-weight: 600;
 }
 
-section.widget h3 {
+section.widget h3,
+footer h3 {
   font-size: 1.1875rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
 }
 
 section.widget.categories-2.widget_categories ul {
