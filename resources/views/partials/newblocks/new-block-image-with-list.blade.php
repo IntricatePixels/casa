@@ -45,7 +45,7 @@
                             @if ($title)
                               <h4 class="p-0 mb-2 fs-5 font-bold @if ( get_row_index() != 1 ) pt-3 @endif">{!! $title !!}</h4>
                             @endif
-                            <div class="px-lg-5 px-3 mb-5">{{ $descr }}</div>
+                            <div class="px-lg-5 px-3 mb-3">{{ $descr }}</div>
                             @if ($link)
                                 @php
                                     $link_url = $link['url'];
@@ -73,7 +73,7 @@
                         $link_title = $link['title'];
                         $link_target = $link['target'] ? $link['target'] : '_self';
                     @endphp
-                    <a class="btn btn-brown text-white mt-5 px-5" href="{{ esc_url($link_url) }}"
+                    <a class="btn btn-brown text-white mt-3 px-5" href="{{ esc_url($link_url) }}"
                         target="{{ esc_attr($link_target) }}">{{ esc_html($link_title) }}</a>
                 @endif
 
