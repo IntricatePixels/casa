@@ -254,8 +254,8 @@ ul.pagination li {
 
   &.in-page-links {
     background-image: $custom-gradient;
-    top: 59px;
-    border-bottom: 1px solid #fff;
+    top: 0;
+    border-bottom: 1px solid #000;
     z-index: 9;
     
     .container-in-page-links {
