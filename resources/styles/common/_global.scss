@@ -255,10 +255,10 @@ section .blue-link:hover {
 
 section .blue-link::after {
   content: url("../../images/arrow-right-long-regular.svg");
-  position: absolute;
-  right: 10px;
-  top: 0;
   height: 10px;
+  position: absolute;
+  right: 12px;
+  top: 10px;
   width: 20px;
 }
 

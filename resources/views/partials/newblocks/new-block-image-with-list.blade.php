@@ -53,13 +53,7 @@
                                     $link_target = $link['target'] ? $link['target'] : '_self';
                                 @endphp
                                 <a class="blue-link right-arrow mt-5 pe-5 position-relative" href="{{ esc_url($link_url) }}"
-                                target="{{ esc_attr($link_target) }}">{{ esc_html($link_title) }}<img src="@asset('images/arrow-right-long-regular.svg')" style="height: 18px;
-    position: absolute;
-    top: 8px;
-    right: -65px;" /></a>
-
-                               
-
+                                target="{{ esc_attr($link_target) }}">{{ esc_html($link_title) }}</a>
                             @endif
                           </div>
                       @endwhile
