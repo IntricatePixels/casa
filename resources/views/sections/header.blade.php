@@ -5,7 +5,7 @@
         <div class="header-logo">
             @include('sections/header-logos')
         </div>
-        <div class="collapse navbar-collapse ms-5 d-lg-flex align-items-center justify-content-end" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse ms-5 d-none d-xl-flex align-items-center justify-content-end" id="navbarSupportedContent">
             @if (has_nav_menu('primary_navigation'))
             <nav class="navbar navbar-expand-lg navbar-light navbar-megamenu" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
                 {!! wp_nav_menu([
@@ -23,7 +23,7 @@
                 <a class="text-white" href="/en/"><span>EN</span></a>
             </div>
 
-            <div class="d-block d-lg-none">
+            <div class="d-block d-xl-none">
                 @if ($mimeo_current_lang_id == '1')
                     <a href="{{ esc_url(home_url('/')) }}kontakt/" title="Kontakt"
                         class="header-search-icon px-md-2">
