@@ -12,14 +12,8 @@
     <!-- ImageMapResizer -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.js"></script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #212721;
-            margin: 0;
-        }
         .details-panel {
-            position: relative;
-            
+            position: relative; 
             width: 100%;
             max-width: 300px;
             z-index: 10;

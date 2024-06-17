@@ -20,7 +20,7 @@
     @endif
 
     <section class="block new cta-banner-full-bg pb-lg-5 py-lg-5 in-page-section" id="ctaBanner-@php echo get_row_index() @endphp" data-section-name="" style="min-height: 500px;">
-        <div class="full-width-banner-cta">
+       
         @php
 $image = get_sub_field('background_image');
 $size = 'full';
@@ -32,9 +32,9 @@ $size = 'full';
     $image_url = wp_get_attachment_image_src($image, $size)[0];
     @endphp
 
-    <img src="{{ $image_url }}" class="object-fit" loading="lazy" alt="">
+    <div class="full-width-banner-cta"> <img src="{{ $image_url }}" class="object-fit" loading="lazy" alt=""></div>
 @endif
-        </div>
+        
         @if (get_sub_field('header'))
         <div class="container position-relative">
             <div class="row">

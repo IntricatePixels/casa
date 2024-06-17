@@ -14,7 +14,7 @@
         $max_width_980 = 'max-width-980';
       }
     @endphp
-    <section class="block new block-products-grid in-page-section px-lg-4 px-4 px-md-0 py-5 mt-5 {{ $max_width_980 }}" id="product-grid-{{ get_row_index() }}" data-section-name="">
+    <section class="block new block-products-grid in-page-section px-lg-4 px-4 px-md-0 pb-5 mt-0 {{ $max_width_980 }}" id="product-grid-{{ get_row_index() }}" data-section-name="">
         <div class="container">
             <div class="col-12 mt-lg-5">
                 <p class="hero-eyebrow">{{ the_sub_field('header_eyebrow') }}</p>
