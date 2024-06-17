@@ -50,7 +50,7 @@
 <section class="block bg-casa-light" id="explorer">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 p-0">
                     @if (get_sub_field('header'))
                         <h2 class="pt-5 pb-3 text-center font-black">
                             @php the_sub_field('header') @endphp
