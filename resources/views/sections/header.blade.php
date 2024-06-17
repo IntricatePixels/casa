@@ -1,5 +1,3 @@
-<link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
-
 <nav class="navbar sticky-top p-0 navbar-expand-xl position-absolute w-100">
     <div class="header-container mt-3 mb-3 mt-lg-2 mb-lg-2">
         <div class="header-logo">
