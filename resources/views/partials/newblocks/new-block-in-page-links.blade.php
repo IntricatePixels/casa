@@ -1,6 +1,6 @@
 @if (get_row_layout() == 'in_page_menu_links')
 {{-- Desktop In Page Links Nav --}}
-<section class="d-none d-md-block block sticky-top new in-page-links mb-5 sticky-top"
+<section class="d-none d-md-block block sticky-top new in-page-links mb-0 sticky-top"
   id="blockInPageLinks-@php echo get_row_index() @endphp">
   <div class="container-in-page-links m-auto">
       <div class="row">
