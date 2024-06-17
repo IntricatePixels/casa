@@ -10,9 +10,5 @@
                 ]) !!}
             @endif
         </div>
-        <button class="btn btn-primary-gradient btn-login-mobile d-sm-none d-block mx-2 mt-4 mb-2 small" id="loginLinkButton"
-            data-bs-toggle="offcanvas" data-bs-target="#offcanvasLogins" aria-controls="offcanvasLogins">
-            Login to Mimeo
-        </button>
     </div>
 </div>

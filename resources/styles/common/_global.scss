@@ -32,6 +32,10 @@ h6 {
   color: $font-grey;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .desktop-break {
   @include media-breakpoint-up(lg) {
     display: block;
@@ -114,7 +118,7 @@ a {
 
 p a {
   color: $font-grey;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover,
