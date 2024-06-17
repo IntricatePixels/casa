@@ -47,7 +47,7 @@
     opacity: 1;
 }
     </style>
-<section class="block bg-casa-light">
+<section class="block bg-casa-light" id="explorer">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
