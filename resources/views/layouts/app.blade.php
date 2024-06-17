@@ -28,6 +28,7 @@
       @endif
 
       @include('sections.footer')
+      @include('sections.mobile-menu')
     </div>
 
     @php(do_action('get_footer'))
