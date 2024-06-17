@@ -82,11 +82,16 @@ footer {
   input {
     color: #222824;
     background-color: #c9c4b3;
- 
-    &::placeholder {
-      color: #222824;
-    }
   }
+
+  input::placeholder {
+      color: #222824 I !important;
+  }
+
+  input:focus {
+      background: #c0b798 !important;
+  }
+
 }
 
 .widget_nav_menu ul {

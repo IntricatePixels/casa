@@ -1,5 +1,7 @@
 <footer class="pt-0 bg-casa-light">
-    <img src="@asset('images/map_lago.jpg')" alt="Map" width="1000" height="500" class="object-fit" style="height: 500px;">
+    <a href="https://maps.app.goo.gl/jepNiFabWBbvo7s7A" target="_blank">
+        <img src="@asset('images/map_lago.jpg')" alt="Map" width="1000" height="500" class="object-fit" style="height: 500px;">
+    </a>
     <div class="container mt-4 pt-4">
         <div class="row">
             <!-- Left Column for WordPress Menu -->
