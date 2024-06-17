@@ -890,10 +890,11 @@ li.mega-column_2 {
 
 .offcanvas.offcanvas-end {
   width: 100%;
-  background: #ffffff;
+  background: #272c42;
   max-width: 540px;
   z-index: 9999;
-  top: 118px;
+  top: 118px !important;
+  opacity: 0.92;
 }
 
 @media (min-width: 1750px) {
@@ -935,7 +936,7 @@ li.mega-column_2 {
 
       .navbar-nav > li {
         padding-right: 0;
-        border-bottom: 1px solid #e7e7e7;
+        border-bottom: 1px solid #444444;
 
         &.mega-menu > .dropdown-menu .flex-col {
           flex-direction: column;
@@ -943,7 +944,6 @@ li.mega-column_2 {
       }
 
       max-width: 100%;
-      background: #fff;
 
       .menu-item-has-children {
         &.open-default .link-depth-0 {
@@ -985,10 +985,10 @@ li.mega-column_2 {
       }
 
       .link-depth-0 {
-        font-size: 19px;
-        line-height: 19px;
-        color: #2f2f2f;
-        font-weight: 600;
+        font-size: 18px;
+        line-height: 18px;
+        color: #f0eadc;
+        font-weight: normal;
 
         &:hover {
           color: #111;
@@ -1000,7 +1000,7 @@ li.mega-column_2 {
           position: absolute;
           width: 10px;
           height: 10px;
-          background: url(../../images/icon_menu_right_big.svg) no-repeat;
+          background: url(../../images/arrow-up-right-from-square-light2.svg) no-repeat;
           background-size: contain;
           right: 1rem;
           border: none;
