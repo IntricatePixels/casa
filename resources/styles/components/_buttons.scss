@@ -1,6 +1,15 @@
 .btn {
   font-weight: 600;
 }
+.btn-brown {
+  background: #81755f !important;
+  border: 1px solid #ffffff !important;
+  color: #ffffff;
+}
+
+.btn-brown:hover {
+  opacity: 0.8;
+}
 
 .btn-primary-gradient,
 .btn-outline-dark {
