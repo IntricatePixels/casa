@@ -1,4 +1,5 @@
 import { domReady } from '@roots/sage/client';
+import $ from 'jquery';
 import 'bootstrap';
 
 const main = async (err) => {
