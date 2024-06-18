@@ -19,7 +19,7 @@
                         <img class="form-logo-image pb-4" style="height: 80px;" src="{{ esc_url($logo_url) }}"
                             alt="{{ esc_attr($logo_alt) }}" />
                     @endif
-                        <h1 class="text-white fs-2"><?php the_sub_field('h1_title'); ?></h1>
+                        <h2 class="text-white fs-2"><?php the_sub_field('h1_title'); ?></h2>
                         <p class="text-white"><?php the_sub_field('left_description'); ?></p>
                     </div>
                 </div>
