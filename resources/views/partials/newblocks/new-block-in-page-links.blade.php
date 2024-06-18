@@ -12,7 +12,7 @@
                       @if (get_sub_field('link_name'))
                           @php $link_url = get_sub_field('link_url') @endphp
                           <div class="ps-3 text-white">
-                              <a class="text-white" style="display:inline-block; width: 100%; font-size: 14px; opacity: 0.6;"
+                              <a class="text-white" style="display:inline-block; width: 100%; font-size: 14px; font-weight: 300; opacity: 0.6;"
                                   href="@php echo esc_url($link_url) @endphp">
                                   @php the_sub_field('link_name') @endphp
                               </a>

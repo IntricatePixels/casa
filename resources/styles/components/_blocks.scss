@@ -253,7 +253,7 @@ ul.pagination li {
   overflow: hidden;
 
   &.in-page-links {
-    background-image: $custom-gradient;
+    background: #212721;
     top: 0;
     border-bottom: 1px solid #000;
     z-index: 9;
