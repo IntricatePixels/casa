@@ -99,21 +99,7 @@
                     </map>
                 </div>
             </div>
-            <div class="col-md-3 col-12">
-                <div class="details-panel" id="detailsPanel">
-                    <div class="card">
-                        <!-- Close button for the card -->
-                        <button type="button" class="btn-close btn-close-white btn-lg" aria-label="Close" style="position: absolute; top: 10px; right: 10px;"></button>
-                        <img src="" alt="" class="card-img-top" id="detailsImage">
-                        <div class="card-body">
-                            <h5 class="card-title" id="detailsTitle"></h5>
-                            <p class="card-text" id="detailsContent"></p>
-                            <!-- Add URL attribute to View More button -->
-                            <a href="#" class="btn btn-primary view-more" target="_blank">View More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
         </div>
     </div>
 </section>
