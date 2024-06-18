@@ -69,28 +69,6 @@ img.home-logo {
   padding: 0;
 }
 
-.dropdown-toggle::after {
-  border: 0;
-  content: url(../../images/angle-down-regular.svg);
-  display: inline-block;
-  height: 10px;
-  vertical-align: initial;
-  width: 8px;
-}
-
-.dropdown-toggle.nav-country-top::after {
-  content: url(../../images/icon_arrow_down_white.svg);
-  right: 2px;
-  position: absolute;
-  top: 9px;
-}
-
-.dropdown-toggle.in-page-links::after {
-  content: url(../../images/icon_arrow_down_white_lg.svg);
-  position: absolute;
-  right: 2rem;
-}
-
 .dropdown-menu.links.show {
   margin-top: -2px !important;
 }

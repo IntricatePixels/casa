@@ -32,7 +32,7 @@
     @if (have_rows('in_page_links_repeater'))
         @php $counter = 1 @endphp
         <button id="inPageLinksToggle"
-            class="bg-transparent border-0 text-start text-white dropdown-toggle  w-100 p-3 in-page-links"
+            class="d-flex justify-content-between align-items-center bg-transparent border-0 text-start text-white dropdown-toggle  w-100 p-3 in-page-links"
             type="button" data-bs-toggle="dropdown" aria-expanded="false">
             @while (have_rows('in_page_links_repeater'))
                 @php
