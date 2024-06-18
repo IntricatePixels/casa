@@ -11,7 +11,7 @@
                   <div class="col py-2 my-2 border-end border-secondary">
                       @if (get_sub_field('link_name'))
                           @php $link_url = get_sub_field('link_url') @endphp
-                          <div class="ps-3 text-white">
+                          <div class="ps-3 text-white text-center">
                               <a class="text-white" style="display:inline-block; width: 100%; font-size: 14px; font-weight: 300; opacity: 0.6;"
                                   href="@php echo esc_url($link_url) @endphp">
                                   @php the_sub_field('link_name') @endphp

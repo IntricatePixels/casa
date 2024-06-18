@@ -17,8 +17,8 @@
         </div>
         <div class="d-flex align-items-center justify-content-end">
             <div class="px-3">
-                <a class="text-white font-bold pe-1" href="/">AL</a>
-                <a class="text-white" href="/en/"><span>EN</span></a>
+                <a class="text-white font-bold pe-2 border-end" href="/">AL</a>
+                <a class="text-white ps-1" href="/en/"><span>EN</span></a>
             </div>
 
             <div class="d-block d-xl-none">
@@ -26,7 +26,7 @@
                     <a href="{{ esc_url(home_url('/')) }}kontakt/" title="Kontakt"
                         class="header-search-icon px-md-2">
                         <img class="header-contact-icon no-lazy" width="16" height="12" src="@asset('images/icon_header_envelope_new.svg')"
-                            alt="Kontakt mimeo" style="width: 16px;"><span class="d-none ps-1 text-white">Kontakt</span></a>
+                            alt="Kontakt mimeo" style="width: 20px;"><span class="d-none ps-1 text-white">Kontakt</span></a>
                 @else
                     <a href="{{ esc_url(home_url('/')) }}contact/" class="header-contact-icon px-md-2"
                         title="Contact Us">
@@ -45,7 +45,7 @@
         }
     </style>
             
-            <button id="mobileNavToggleBtn" class="navbar-toggler ms-3 p-1 collapsed border-white"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasmenu"
+            <button id="mobileNavToggleBtn" class="navbar-toggler ms-3 p-1 collapsed border-0"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasmenu"
                     aria-controls="offcanvasmenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
