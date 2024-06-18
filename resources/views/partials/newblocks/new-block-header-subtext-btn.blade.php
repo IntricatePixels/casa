@@ -18,6 +18,7 @@
                                 <a class="blue-link right-arrow mt-5 pe-5 position-relative" href="@php echo esc_attr( $link_url ) @endphp"
                                     target="@php echo esc_attr( $link_target ) @endphp">@php echo esc_html( $link_title ) @endphp</a>
                             </div>
+                            
                         @endif
                 </div>
             </div>
