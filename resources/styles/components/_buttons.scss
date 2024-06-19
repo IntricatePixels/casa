@@ -18,33 +18,33 @@ $arrow-brown: url('../../images/arrow_brown_right.svg');
 $arrow-beige: url('../../images/arrow_beige_right.svg');
 $arrow-height: 10px;
 $arrow-width: 20px;
-$arrow-position: 10px 8px;
+$arrow-position-right: 10px;
+$arrow-position-top: 8px;
 
 .btn {
   padding: $btn-padding;
   border-radius: $btn-radius;
   transition: background-color $btn-transition;
+  position: relative; // Ensure the button is the reference for the ::after position
 
   &.btn-brown {
     background-color: $color-brown-bg;
     color: $color-brown-text;
-    position: relative; // Ensure the button is the reference for the ::after position
 
-    &:after {
+    &::after {
       content: $arrow-beige;
       height: $arrow-height;
       width: $arrow-width;
       position: absolute;
-      right: nth($arrow-position, 1);
-      top: nth($arrow-position, 2);
+      right: $arrow-position-right;
+      top: $arrow-position-top;
     }
 
     &:hover {
       background-color: $color-brown-hover-bg;
-      color: $color-brown-text;
 
-      &:after {
-        content: $arrow-brown;
+      &::after {
+        content: $arrow-beige;
       }
     }
 
@@ -60,23 +60,22 @@ $arrow-position: 10px 8px;
   &.btn-gray {
     background-color: $color-gray-bg;
     color: $color-gray-text;
-    position: relative; // Ensure the button is the reference for the ::after position
 
-    &:after {
+    &::after {
       content: $arrow-brown;
       height: $arrow-height;
       width: $arrow-width;
       position: absolute;
-      right: nth($arrow-position, 1);
-      top: nth($arrow-position, 2);
+      right: $arrow-position-right;
+      top: $arrow-position-top;
     }
 
     &:hover {
       background-color: $color-gray-hover-bg;
       color: $color-gray-bg;
 
-      &:after {
-        content: $arrow-beige;
+      &::after {
+        content: $arrow-brown;
       }
     }
 
