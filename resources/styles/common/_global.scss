@@ -248,12 +248,14 @@ section .blue-link {
   background-color: #81755f;
   
   background-color: #81755f;
-  padding: 8px 22px 8px 12px;
+  padding: 8px 26px 8px 12px;
   border-radius: 6px;
 }
 
 section .blue-link:hover {
-  color: #fff;
+  background: #E5E1E6;
+  color: #212721;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -261,7 +263,7 @@ section .blue-link::after {
   content: url("../../images/arrow-right-long-regular.svg");
   height: 10px;
   position: absolute;
-  right: 12px;
+  right: 10px;
   top: 8px;
   width: 20px;
 }
@@ -281,9 +283,12 @@ section.breadcrumb {
   }
 }
 
-section.block p {
+section.block p, 
+section.block div {
   font-size: 1rem;
   color: #81755f;
+  margin: 0;
+  font-weight: 300;
 }
 
 section.block p.prod-grid-title {

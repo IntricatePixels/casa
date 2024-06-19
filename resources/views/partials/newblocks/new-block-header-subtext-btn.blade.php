@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col">
                     @if (get_sub_field('header'))
-                        <h2 class="text-center my-4">@php the_sub_field('header') @endphp</h2>
+                        <h2 class="text-center py-5">@php the_sub_field('header') @endphp</h2>
                     @endif
                     @if (get_sub_field('subtext'))
                         <div class="max-width-8 mx-auto text-center mb-45">@php the_sub_field('subtext') @endphp</div>
@@ -14,7 +14,7 @@
                             @php $link_url = $link['url'] @endphp
                             @php $link_title = $link['title'] @endphp
                             @php $link_target = $link['target'] ? $link['target'] : '_self' @endphp
-                            <div class="text-center mb-5">
+                            <div class="text-center py-5">
                                 <a class="blue-link right-arrow mt-5 pe-5 position-relative" href="@php echo esc_attr( $link_url ) @endphp"
                                     target="@php echo esc_attr( $link_target ) @endphp">@php echo esc_html( $link_title ) @endphp</a>
                             </div>
