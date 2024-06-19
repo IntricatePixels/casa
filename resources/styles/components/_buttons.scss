@@ -1,37 +1,8 @@
-.btn {
-  font-weight: 600;
-}
-.btn-brown {
-  background: #81755f !important;
-  border: 1px solid #ffffff !important;
-  color: #ffffff;
-}
-
-.btn-brown:hover {
-  opacity: 0.8;
-}
-
-.btn-primary-gradient,
-.btn-outline-dark {
-  color: #fff;
-  border: 1px transparent;
-  padding: 10px 14px;
-  background-image: $custom-gradient;
-  border-radius: 4px;
-  font-weight: 700;
-
-  @include media-breakpoint-up(lg) {
-    width: unset;
-  }
-}
-
-.btn-outline-dark {
-  background: transparent;
-  color: $font-green;
-  border: 1px solid $font-green;
-  font-weight: 700;
-
-  &:hover {
-    background-color: $mimeo-blue;
-  }
+.btn .btn-primary {
+  background-color: #81755f;
+  border-radius: 6px;
+  color: #f0eadc;
+  padding: 8px 22px 8px 12px;
+  text-transform: capitalize;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
