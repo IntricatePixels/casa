@@ -258,7 +258,7 @@ section.block-products-grid .col-lg-4:last-child {
   content: " ";
   width: 81%;
   height: 1px;
-  background: white;
+  background: #444444;
   display: block;
   position: absolute;
   margin: auto;
@@ -424,7 +424,7 @@ a.nav-link h2 {
   }
 
   .side-border::after {
-    background: white;
+    background: #444444;
   }
 
   .col-md-3.bottom-border:nth-child(-n+4)::before,

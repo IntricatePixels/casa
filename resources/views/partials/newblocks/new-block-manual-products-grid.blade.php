@@ -18,7 +18,7 @@
         <div class="container">
             <div class="col-12 mt-lg-5">
                 <p class="hero-eyebrow">{{ the_sub_field('header_eyebrow') }}</p>
-                <h2 class="mb-3 pt-0 mt-0 font-black" data-title="{{ the_sub_field('behind_header_text') }}">
+                <h2 class="mb-3 pt-0 mt-0 font-black text-center" data-title="{{ the_sub_field('behind_header_text') }}">
                     {{ the_sub_field('header') }}</h2>
                 <div class="block-subheader mb-5">{{ the_sub_field('subhead') }}</div>
             </div>
