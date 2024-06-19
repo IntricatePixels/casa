@@ -44,6 +44,11 @@ a {
   font-weight: 300;
 }
 
+img {
+  height: auto;
+  width: 100%;
+}
+
 .desktop-break {
   @include media-breakpoint-up(lg) {
     display: block;
