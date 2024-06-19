@@ -32,7 +32,7 @@
                                 $link_title = $button['title'];
                                 $link_target = $button['target'] ? $button['target'] : '_self';
                             @endphp
-                            <a class="mt-3 btn btn-primary-gradient" href="{{ esc_url($link_url) }}"
+                            <a class="mt-3 btn btn-brown-gradient" href="{{ esc_url($link_url) }}"
                                 target="{{ esc_attr($link_target) }}">{{ esc_html($link_title) }}</a>
                         @endforeach
                     </div>

@@ -87,7 +87,7 @@
                             $link_title = $footer_button['title'];
                             $link_target = $footer_button['target'] ? $footer_button['target'] : '_self';
                         @endphp
-                        <a class="btn btn-primary-gradient px-5" href="{{ esc_url($link_url) }}"
+                        <a class="btn btn-brown-gradient px-5" href="{{ esc_url($link_url) }}"
                             target="{{ esc_attr($link_target) }}">{{ esc_html($link_title) }}</a>
                     @endif
 

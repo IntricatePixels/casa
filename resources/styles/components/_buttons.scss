@@ -1,8 +1,91 @@
-.btn-brown {
-  background-color: #81755f;
-  border-radius: 6px;
-  color: #f0eadc;
-  padding: 8px 22px 8px 12px;
-  text-transform: capitalize;
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+// Variables for common values
+$btn-padding: 5px 20px;
+$btn-radius: 5px;
+$btn-transition: 0.3s;
+
+$color-brown-bg: #81755f;
+$color-brown-text: #f0eadc;
+$color-brown-hover-bg: #e5e1e6;
+$color-brown-active-bg: #e6d9e9;
+$color-brown-shadow: rgba(227, 231, 228, 0.5);
+
+$color-gray-bg: #e5e1e6;
+$color-gray-text: #212721;
+$color-gray-hover-bg: #81755f;
+$color-gray-shadow: rgba(213, 216, 214, 0.5);
+
+$arrow-brown: url('../../images/arrow_brown_right.svg');
+$arrow-beige: url('../../images/arrow_beige_right.svg');
+$arrow-height: 10px;
+$arrow-width: 20px;
+$arrow-position: 10px 8px;
+
+.btn {
+  padding: $btn-padding;
+  border-radius: $btn-radius;
+  transition: background-color $btn-transition;
+
+  &.btn-brown {
+    background-color: $color-brown-bg;
+    color: $color-brown-text;
+    position: relative; // Ensure the button is the reference for the ::after position
+
+    &:after {
+      content: $arrow-beige;
+      height: $arrow-height;
+      width: $arrow-width;
+      position: absolute;
+      right: nth($arrow-position, 1);
+      top: nth($arrow-position, 2);
+    }
+
+    &:hover {
+      background-color: $color-brown-hover-bg;
+      color: $color-brown-text;
+
+      &:after {
+        content: $arrow-brown;
+      }
+    }
+
+    &:active {
+      background-color: $color-brown-active-bg;
+    }
+
+    &:focus {
+      box-shadow: 0 0 5px 2px $color-brown-shadow;
+    }
+  }
+
+  &.btn-gray {
+    background-color: $color-gray-bg;
+    color: $color-gray-text;
+    position: relative; // Ensure the button is the reference for the ::after position
+
+    &:after {
+      content: $arrow-brown;
+      height: $arrow-height;
+      width: $arrow-width;
+      position: absolute;
+      right: nth($arrow-position, 1);
+      top: nth($arrow-position, 2);
+    }
+
+    &:hover {
+      background-color: $color-gray-hover-bg;
+      color: $color-gray-bg;
+
+      &:after {
+        content: $arrow-beige;
+      }
+    }
+
+    &:active {
+      background-color: $color-gray-hover-bg;
+    }
+
+    &:focus {
+      box-shadow: 0 0 5px 2px $color-gray-shadow;
+    }
+  }
 }

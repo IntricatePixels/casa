@@ -24,7 +24,7 @@
                             $link_title = $link['title'];
                             $link_target = $link['target'] ? $link['target'] : '_self';
                         @endphp
-                        <a class="btn btn-primary-gradient mt-4 px-5" href="@php echo esc_url( $link_url ) @endphp"
+                        <a class="btn btn-brown-gradient mt-4 px-5" href="@php echo esc_url( $link_url ) @endphp"
                             target="@php echo esc_attr( $link_target ) @endphp">
                             @php echo esc_html( $link_title ) @endphp
                         </a>
@@ -74,7 +74,7 @@
       </div>
       <div class="col-md-6">
         <div class="dropdown mt-3 w-50">
-          <button class="btn btn-primary w-100 bg-white text-body dropdown-toggle border border-secondary" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+          <button class="btn btn-brown w-100 bg-white text-body dropdown-toggle border border-secondary" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
             Select Location
           </button>
           <ul class="dropdown-menu w-100 border border-secondary" aria-labelledby="dropdownMenuButton">

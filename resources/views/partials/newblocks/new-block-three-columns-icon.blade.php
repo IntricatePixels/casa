@@ -58,11 +58,11 @@
                                 @endphp
                                 <p>
                                     @if ($regular_link_or_button)
-                                        <a class="btn btn-primary-gradient {{ the_sub_field('button_color') }}"
+                                        <a class="btn btn-brown-gradient {{ the_sub_field('button_color') }}"
                                             href="{{ esc_url($link_url) }}"
                                             target="{{ esc_attr($link_target) }}">{{ esc_html($link_title) }}</a>
                                     @else
-                                        <a class="button btn btn-primary" href="{{ esc_url($link_url) }}"
+                                        <a class="button btn btn-brown" href="{{ esc_url($link_url) }}"
                                             target=" {{ esc_attr($link_target) }}">{{ esc_html($link_title) }} </a>
                                     @endif
                                 </p>

@@ -15,7 +15,7 @@
                             @php $link_title = $link['title'] @endphp
                             @php $link_target = $link['target'] ? $link['target'] : '_self' @endphp
                             <div class="text-center py-5">
-                                <a class="btn btn-primary right-arrow mt-5 pe-5 position-relative" href="@php echo esc_attr( $link_url ) @endphp"
+                                <a class="btn btn-gray mt-5 pe-5 position-relative" href="@php echo esc_attr( $link_url ) @endphp"
                                     target="@php echo esc_attr( $link_target ) @endphp">@php echo esc_html( $link_title ) @endphp</a>
                             </div>
                             

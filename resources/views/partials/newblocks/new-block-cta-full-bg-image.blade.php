@@ -55,7 +55,7 @@ $size = 'full';
                             @if (get_sub_field('wistia_video_link'))
                                 @include('partials/blocks/wistia')
                             @else
-                                <a class="btn btn-primary-gradient mt-3" href="@php echo esc_url($link_url) @endphp"
+                                <a class="btn btn-brown-gradient mt-3" href="@php echo esc_url($link_url) @endphp"
                                     target="@php echo esc_attr($link_target) @endphp">@php echo esc_html($link_title) @endphp</a>
                             @endif
                         </div>

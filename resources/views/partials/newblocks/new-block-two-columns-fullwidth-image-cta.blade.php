@@ -23,7 +23,7 @@
                                 $link_title = $link['title'];
                                 $link_target = $link['target'] ? $link['target'] : '_self';
                             @endphp
-                            <a class="btn btn-primary-gradient" href="@php echo esc_url($link_url) @endphp"
+                            <a class="btn btn-brown-gradient" href="@php echo esc_url($link_url) @endphp"
                                 target="@php echo esc_attr($link_target) @endphp">@php echo esc_html($link_title) @endphp</a>
                         @endif
                         @php $link2 = get_sub_field('button_2') @endphp
@@ -33,7 +33,7 @@
                                 $link_title = $link2['title'];
                                 $link_target = $link2['target'] ? $link2['target'] : '_self';
                             @endphp
-                            <a class="ms-2 btn btn-primary-gradient" href="@php echo esc_url($link_url) @endphp"
+                            <a class="ms-2 btn btn-brown-gradient" href="@php echo esc_url($link_url) @endphp"
                                 target="@php echo esc_attr($link_target) @endphp">@php echo esc_html($link_title) @endphp</a>
                         @endif
                         @php $link3 = get_sub_field('button_3') @endphp
@@ -44,7 +44,7 @@
                                 $link_target = $link3['target'] ? $link3['target'] : '_self';
                             @endphp
                             <br>
-                            <a class="ms-0 mt-2 btn btn-primary-gradient" href="@php echo esc_url($link_url) @endphp"
+                            <a class="ms-0 mt-2 btn btn-brown-gradient" href="@php echo esc_url($link_url) @endphp"
                                 target="@php echo esc_attr($link_target) @endphp">@php echo esc_html($link_title) @endphp</a>
                         @endif
                         @php $link4 = get_sub_field('button_4') @endphp
@@ -54,7 +54,7 @@
                                 $link_title = $link4['title'];
                                 $link_target = $link4['target'] ? $link4['target'] : '_self';
                             @endphp
-                            <a class="ms-2 mt-2 btn btn-primary-gradient" href="@php echo esc_url($link_url) @endphp"
+                            <a class="ms-2 mt-2 btn btn-brown-gradient" href="@php echo esc_url($link_url) @endphp"
                                 target="@php echo esc_attr($link_target) @endphp">@php echo esc_html($link_title) @endphp</a>
                         @endif
                     </div>

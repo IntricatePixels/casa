@@ -33,7 +33,7 @@
                                 <div class="post-card-content py-2">
                                     <p class="prod-grid-title font-bold my-2">{{ esc_html($title) }}</p>
                                     <p>{{ esc_html($excerpt) }}</p>
-                                    <div class="btn btn-primary">{{ esc_html($title) }}</div>
+                                    <div class="btn btn-brown">{{ esc_html($title) }}</div>
                                 </div>
                             </div>
                         </div>
@@ -41,7 +41,7 @@
                 @endif
             </div>
             <div class="learn-more-btn d-flex align-items-center">
-                <a class="mt-5 mx-auto btn btn-primary-gradient" href="{{ esc_url($link_url) }}"
+                <a class="mt-5 mx-auto btn btn-brown-gradient" href="{{ esc_url($link_url) }}"
                     target="{{ esc_attr($link_target) }}">{{ esc_html($link_title) }}</a>
             </div>
         </div>

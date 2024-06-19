@@ -21,7 +21,7 @@
               </div>
                 <div class="col">
                     <p>
-                        <button class="d-md-none btn btn-primary" type="button" data-bs-toggle="collapse"
+                        <button class="d-md-none btn btn-brown" type="button" data-bs-toggle="collapse"
                             data-bs-target="#resourcescollapse" aria-expanded="false" aria-controls="resourcescollapse">
                             Menu Collapse
                         </button>

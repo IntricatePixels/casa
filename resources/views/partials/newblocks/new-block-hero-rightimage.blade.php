@@ -50,7 +50,7 @@
                             $link_title = $link['title'];
                             $link_target = $link['target'] ? $link['target'] : '_self';
                         @endphp
-                        <a class="mt-2 btn btn-primary-gradient" href="{{ esc_url($link_url) }}"
+                        <a class="mt-2 btn btn-brown-gradient" href="{{ esc_url($link_url) }}"
                             target="{{ esc_attr($link_target) }}">{{ esc_html($link_title) }}</a>
                     @endif
                 </div>

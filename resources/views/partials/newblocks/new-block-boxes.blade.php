@@ -26,7 +26,7 @@
                   $link_title = $link['title'];
                   $link_target = $link['target'] ? $link['target'] : '_self';
               @endphp
-              <a class="btn btn-primary-gradient mt-4 px-5" href="@php echo esc_url( $link_url ) @endphp"
+              <a class="btn btn-brown-gradient mt-4 px-5" href="@php echo esc_url( $link_url ) @endphp"
                   target="@php echo esc_attr( $link_target ) @endphp">
                   @php echo esc_html( $link_title ) @endphp
               </a>
