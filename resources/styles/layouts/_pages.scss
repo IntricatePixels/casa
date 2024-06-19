@@ -279,17 +279,6 @@ section.block-products-grid .col-lg-4:last-child {
   margin: auto;
 }
 
-.checkgrid::before {
-  display: inline-block;
-  border: 0;
-  content: url("../../images/check-square-regular.svg");
-  width: 20px;
-  height: 14px;
-  left: -30px;
-  top: 33px;
-  position: relative;
-}
-
 ul.checklist li {
   display: flex;
   margin-bottom: 10px;
