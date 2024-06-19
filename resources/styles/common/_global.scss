@@ -34,8 +34,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Helvetica', sans-serif;
-  font-weight: 300;
+  font-family: 'Helvetica', sans-serif !important;
+  font-weight: 300 !important;
   color: $font-green;
 }
 
