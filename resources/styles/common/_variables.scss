@@ -1,3 +1,6 @@
+:root {
+  --bs-heading-color: #212721; /* Custom heading color */
+}
 
 $border: 1px solid #e6e6e6;
 $font-green: #81755f;
@@ -19,6 +22,7 @@ $large-text : 2rem;
 $largest-text : 3rem;
 $font-green: #212721;
 $casa-light-bg: #f4f0f3;
+$headings-color: #000000;
 
 $container-max-widths: (
   sm: 540px,
@@ -38,3 +42,7 @@ $navbar-light-toggler-icon-bg: none;
 
 
 $custom-gradient: linear-gradient(90deg,#212721, #272c42,#353d34);
+
+
+
+

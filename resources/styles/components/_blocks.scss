@@ -169,7 +169,18 @@ section.faq.faq-new-layout .container {
   text-decoration: none;
 }
 
+img.location-popup-icon {
+  height: 40px;
+}
 
+select#websiteLocation {
+  height: 36px;
+  padding: 0;
+  background: #e0e0e075;
+  max-width: 390px;
+  margin: 0;
+  font-size: 16px;
+}
 
 section.block.block-form h2.eyebrow-text {
   color: #5e646c;
@@ -369,6 +380,32 @@ section.block.block-big-cta {
   text-align: center;
   letter-spacing: 1.8px;
   margin-bottom: 6px;
+}
+
+.lp-template .block-products-grid img.size-product-block {
+  border-radius: 8px;
+}
+
+.lp-template .block-products-grid .col-md-6 img.size-product-block {
+  height: 238px;
+}
+
+.lp-template-template-lp-dark #main {
+  overflow: hidden;
+}
+
+.lp-template-template-lp-dark section.main-form,
+.lp-template-template-lp-dark section.main-form.blue-theme {
+  background-color: #f7f7f7;
+}
+
+.lp-template-template-lp-dark .gform_wrapper.gravity-theme .gform_footer input[type=submit] {
+  width: 100%;
+  background-image: $custom-gradient;
+}
+
+.lp-template-template-lp-dark .d-md-none img.size-product-block {
+  height: auto;
 }
 
 .block.new.in-page-links .col:last-child {
