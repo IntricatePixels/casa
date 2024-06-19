@@ -33,7 +33,7 @@
                                 <div class="post-card-content py-2">
                                     <p class="prod-grid-title font-bold my-2">{{ esc_html($title) }}</p>
                                     <p>{{ esc_html($excerpt) }}</p>
-                                    <div class="blue-link">{{ esc_html($title) }}</div>
+                                    <div class="btn btn-primary">{{ esc_html($title) }}</div>
                                 </div>
                             </div>
                         </div>

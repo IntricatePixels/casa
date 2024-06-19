@@ -63,7 +63,7 @@
                                     $link_title = $link['title'];
                                     $link_target = $link['target'] ? $link['target'] : '_self';
                                 @endphp
-                                <a class="blue-link right-arrow mt-5" href="@php echo esc_url( $link_url ) @endphp"
+                                <a class="btn btn-primary right-arrow mt-5" href="@php echo esc_url( $link_url ) @endphp"
                                 target="@php echo esc_attr( $link_target ) @endphp">@php echo esc_html( $link_title ) @endphp @asset('images/arrow-right-long-regular.svg')</a>
                             @endif
                           </div>

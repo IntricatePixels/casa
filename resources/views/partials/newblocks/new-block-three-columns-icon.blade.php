@@ -62,7 +62,7 @@
                                             href="{{ esc_url($link_url) }}"
                                             target="{{ esc_attr($link_target) }}">{{ esc_html($link_title) }}</a>
                                     @else
-                                        <a class="button blue-link" href="{{ esc_url($link_url) }}"
+                                        <a class="button btn btn-primary" href="{{ esc_url($link_url) }}"
                                             target=" {{ esc_attr($link_target) }}">{{ esc_html($link_title) }} </a>
                                     @endif
                                 </p>
