@@ -27,8 +27,8 @@
 
 .btn-outline-dark {
   background: transparent;
-  color: $font-grey;
-  border: 1px solid $font-grey;
+  color: $font-green;
+  border: 1px solid $font-green;
   font-weight: 700;
 
   &:hover {
@@ -97,7 +97,7 @@
 }
 
 p a {
-  color: $font-grey;
+  color: $font-green;
   text-decoration: underline;
   font-weight: 600;
 }
@@ -141,7 +141,7 @@ a.newlogin.grey-login {
 
   &:hover {
     background-color: #adadad;
-    color: $font-grey;
+    color: $font-green;
   }
 }
 
@@ -160,7 +160,7 @@ a.newlogin.signup {
 
   &:hover {
     background: transparent;
-    color: $font-grey;
+    color: $font-green;
     border: 1px solid #adadad;
   }
 }
@@ -221,7 +221,7 @@ a.newlogin.photos-login::before {
 }
 
 a.newsignup {
-  color: $font-grey;
+  color: $font-green;
   font-weight: 600;
 }
 
