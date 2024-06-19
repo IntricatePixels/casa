@@ -30,6 +30,7 @@ $arrow-position-top: 8px;
   &.btn-brown {
     background-color: $color-brown-bg;
     color: $color-brown-text;
+    padding-right: 35px;
 
     &::after {
       content: $arrow-beige;
@@ -60,6 +61,7 @@ $arrow-position-top: 8px;
   &.btn-gray {
     background-color: $color-gray-bg;
     color: $color-gray-text;
+    padding-right: 35px;
 
     &::after {
       content: $arrow-brown;

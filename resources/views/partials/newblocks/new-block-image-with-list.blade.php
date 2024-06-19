@@ -41,7 +41,7 @@
                             $descr = get_sub_field('descr');
                             $link = get_sub_field('link'); 
                           @endphp
-                          <div class="pb-3 @if ($count > 1 ) ps-4 ps-lg-5 border-dotted @if ( get_row_index() === 1  ) border-blue @endif @endif">
+                          <div class="pb-5 @if ($count > 1 ) ps-4 ps-lg-5 border-dotted @if ( get_row_index() === 1  ) border-blue @endif @endif">
                             @if ($title)
                               <h4 class="p-0 mb-2 fs-5 font-bold @if ( get_row_index() != 1 ) pt-3 @endif">{!! $title !!}</h4>
                             @endif
@@ -52,7 +52,7 @@
                                     $link_title = $link['title'];
                                     $link_target = $link['target'] ? $link['target'] : '_self';
                                 @endphp
-                                <a class="btn btn-brown right-arrow mt-5 pe-5 position-relative" href="{{ esc_url($link_url) }}"
+                                <a class="btn btn-brown right-arrow pe-5 position-relative" href="{{ esc_url($link_url) }}"
                                 target="{{ esc_attr($link_target) }}">{{ esc_html($link_title) }}</a>
                             @endif
                           </div>
@@ -67,7 +67,7 @@
                         $link_title = $link['title'];
                         $link_target = $link['target'] ? $link['target'] : '_self';
                     @endphp
-                    <a class="btn btn-brown right-arrow mt-5 pe-5 position-relative" href="{{ esc_url($link_url) }}"
+                    <a class="btn btn-brown right-arrow mt-0 position-relative" href="{{ esc_url($link_url) }}"
                         target="{{ esc_attr($link_target) }}">{{ esc_html($link_title) }}</a>
                 @endif
 
