@@ -1,27 +1,22 @@
 @if (get_row_layout() == 'explorer')
 <!-- Bootstrap Icons -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-<!-- Maphilight -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
-<!-- ImageMapResizer -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.js"></script> -->
 
 <style>
-    .content-div {
-        display: none; /* Hidden by default */
-        background-color: #212721;
-        padding: 20px;
-        color: #fff;
-    }
+        .modal-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
 
-    .content-div img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        max-width: 100%;
-        max-height: 100vh;
-    }
-</style>
+        .modal-body img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            max-width: 100%;
+            max-height: 100vh;
+        }
+    </style>
 
 <section class="block bg-casa-light pt-5" id="explorer">
     <div class="container-fluid">
@@ -55,42 +50,46 @@
                     </map>
                 </div>
             </div>
+           
         </div>
     </div>
 </section>
 
-<!-- Content Div -->
-<div id="contentDiv" class="content-div">
-    <button type="button" class="btn-close" id="closeContentDiv" aria-label="Close"></button>
-    <div class="content-body">
-        @if (shortcode_exists('drawattention'))
-            {!! do_shortcode('[drawattention]') !!}
-        @endif
+<!-- Fullscreen Modal -->
+<div class="modal fade" id="leftModalWindow" tabindex="-1" aria-labelledby="leftModalWindowLabel" aria-hidden="true" style="background-color: #212721;">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                @if (shortcode_exists('drawattention'))
+                    {!! do_shortcode('[drawattention]') !!}
+                @endif
+            </div>
+        </div>
     </div>
 </div>
 
 <script>
-    jQuery(document).ready(function($){
-        // Initialize the Maphilight plugin
-        $('img').maphilight({
-            fillColor: '008800',
-            strokeColor: '008800',
-        });
+  jQuery(document).ready(function($) {
+    // Show the modal when the area with href="#leftModalWindow" is clicked
+    $('area[href="#leftModalWindow"]').click(function(event) {
+        event.preventDefault(); // Prevent default link behavior
 
-        // Initialize ImageMapResizer plugin
-        // $('map').imageMapResize();
-
-        // Show the content div when the area with href="#leftModalWindow" is clicked
-        $('area[href="#leftModalWindow"]').click(function(event) {
-            event.preventDefault(); // Prevent default link behavior
-            $('#contentDiv').show();
-        });
-
-        // Close the content div
-        $('#closeContentDiv').click(function() {
-            $('#contentDiv').hide();
+        // Show the modal
+        $('#leftModalWindow').modal('show').on('shown.bs.modal', function () {
+            // Initialize hotspots after the modal is shown
+            setTimeout(function() {
+                hotspots.init();
+            }, 100);
         });
     });
+
+    // Close the content div
+    $('#closeContentDiv').click(function() {
+        $('#contentDiv').hide();
+    });
+});
+
 </script>
 
 @endif
