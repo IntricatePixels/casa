@@ -6,6 +6,8 @@
  *
  * @type {import('@roots/bud').Config}
  */
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+
 export default async (app) => {
   /**
    * Application assets & entrypoints
@@ -33,9 +35,9 @@ export default async (app) => {
    * @see {@link https://bud.js.org/reference/bud.watch}
    */
   app
-  .setUrl('http://localhost:3000')
-  .setProxyUrl('http://casa.local')
-  .watch(['resources/views', 'app']);
+    .setUrl('http://localhost:3000')
+    .setProxyUrl('http://casa.local')
+    .watch(['resources/views', 'app']);
 
   /**
    * Generate WordPress `theme.json`
@@ -74,5 +76,20 @@ export default async (app) => {
         customFontSize: false,
       },
     })
-    .enable()
+    .enable();
+
+  /**
+   * Copy static files
+   *
+   * Use the CopyWebpackPlugin to copy static files from the resources directory
+   * to the public directory during the build process.
+   */
+  app.use({
+    name: 'copy-html',
+    make: () => new CopyWebpackPlugin({
+      patterns: [
+        { from: 'views/explorer/left.html', to: 'sections/explorer/left.html' },
+      ],
+    }),
+  });
 };
