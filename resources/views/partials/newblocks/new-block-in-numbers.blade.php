@@ -6,10 +6,10 @@
     <section id="block-in-numbers" class="block in-page-section new py-5 gradient-@php echo esc_attr($gradientvalue) @endphp block-in-numbers" data-section-name="">
         <div class="container py-5">
             @if (get_sub_field('header'))
-                <h2 class="white max-width-8 mb-45 mx-auto text-center font-black">@php the_sub_field('header')@endphp</h2>
+                <h2 class="white max-width-8 mb-45 mx-auto text-center pb-3">@php the_sub_field('header')@endphp</h2>
             @endif
             @if (get_sub_field('subtext'))
-                <p class="max-width-7 mx-auto text-center mb-45">@php the_sub_field('subtext') @endphp</p>
+                <p class="max-width-7 mx-auto text-center mb-45 pb-3">@php the_sub_field('subtext') @endphp</p>
             @endif
             <div class="row">
                 @if (have_rows('numbers'))

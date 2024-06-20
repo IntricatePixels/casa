@@ -19,7 +19,7 @@
         @php $wistia_video_url = get_sub_field('wistia_video_url', false, false) @endphp
     @endif
 
-    <section class="block new cta-banner-full-bg pb-lg-5 py-lg-5 in-page-section" id="ctaBanner-@php echo get_row_index() @endphp" data-section-name="" style="min-height: 500px;">
+    <section class="block new cta-banner-full-bg pb-lg-5 py-lg-5 in-page-section" id="ctaBanner-@php echo get_row_index() @endphp" data-section-name="">
        
         @php
 $image = get_sub_field('background_image');

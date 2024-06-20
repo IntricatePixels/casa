@@ -214,12 +214,6 @@ section.block.block-form .left-column>div {
   margin: 0 auto;
 }
 
-@include media-breakpoint-up(xxl) {
-  section.block.block-form .right-column {
-    max-width: 940px;
-  }
-}
-
 section.block.block-form .form-logo-image {
   height: 40px;
   width: auto;
@@ -488,43 +482,6 @@ section.block.block-centered-image .boxy.boxy4 .line {
       }
   }
 
-
-}
-
-.border-dotted {
-  border-left: 2px solid #d6d6d6; 
-  border-left-style: dotted; 
-  border-left-width: 2px;
-
-  &.border-blue {
-    border-color: #007ab7;
-    border-left-style: solid;
-  }
-}
-
-@include media-breakpoint-down(xxl) {
-  .banner.hero-banner-dark img.hero-image {
-    right: -320px;
-  }
-}
-
-@include media-breakpoint-down(xl) {
-  .banner.hero-banner-dark img.hero-image {
-    right: -420px;
-  }
-}
-
-
-@include media-breakpoint-down(lg) {
-  .banner.hero-banner-dark img.hero-image {
-    right: -520px;
-  }
-}
-
-@include media-breakpoint-down(md) {
-  .banner.hero-banner-dark img.hero-image {
-    right: -620px;
-  }
 }
 
 @include media-breakpoint-up(lg) {
@@ -533,6 +490,11 @@ section.block.block-centered-image .boxy.boxy4 .line {
   section.block.block-centered-image .boxy4 {
     margin-top: 5rem;
   }
+
+  .cta-banner-full-bg {
+    min-height: 370px;
+  }
+
 }
 
 @include media-breakpoint-up(md) {
@@ -600,39 +562,6 @@ section.block.block-centered-image .boxy.boxy4 .line {
 
     &.in-page-links {
       top: 0;
-    }
-  }
-}
-
-@media (min-width: 1023px) {
-  .banner.new {
-    
-    .dot {
-      height: 12px;
-      width: 12px;
-      background-color: #bbb;
-      border-radius: 50%;
-      position: absolute;
-
-      &.dot1 {
-        background-color: #593a7b;
-        top: 1%;
-        right: 35%;
-      }
-
-      &.dot2 {
-        background-color: #598f44;
-        height: 9px;
-        width: 9px;
-        left: 1%;
-        top: 42%;
-      }
-
-      &.dot3 {
-        background-color: #0279b6;
-        bottom: 5%;
-        right: 47%;
-      }
     }
   }
 }
@@ -706,7 +635,7 @@ section.block.block-centered-image .boxy.boxy4 .line {
   .col-md-3.bottom-border:nth-child(5):after,
   .col-md-3.bottom-border:nth-child(3):after,
   .col-md-3.bottom-border:nth-child(7):after {
-    background: #fff !important;
+    background: #444444 !important;
   }
 
   .hero-eyebrow {
