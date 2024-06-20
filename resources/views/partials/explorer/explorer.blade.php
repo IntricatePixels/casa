@@ -18,12 +18,12 @@
         <div class="row">
             <div class="col-12 p-0">
                 @if (get_sub_field('header'))
-                    <h2 class="pt-5 pb-5 text-center font-black">
+                    <h2 class="pt-5 pb-3 text-center font-black">
                         @php the_sub_field('header') @endphp
                     </h2>
                 @endif
                 @if (get_sub_field('sub_header'))
-                    <p class="pb-3 text-center">
+                    <p class="pb-5 text-center">
                         @php the_sub_field('sub_header') @endphp
                     </p>
                 @endif
