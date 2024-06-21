@@ -26,6 +26,7 @@ $arrow-position-top: 8px;
   border-radius: $btn-radius;
   transition: background-color $btn-transition;
   position: relative; // Ensure the button is the reference for the ::after position
+  font-weight: 300;
 
   &.btn-brown {
     background-color: $color-brown-bg;
