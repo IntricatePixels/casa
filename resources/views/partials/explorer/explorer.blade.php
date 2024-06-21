@@ -84,8 +84,8 @@
 
     //Initialize the Maphilight plugin
     $('#mainExplorerImage').maphilight({
-        fillColor: '#6f96d1',
-        strokeColor: 'ffffff',
+        fillColor: '6f96d1',
+        strokeColor: '000000',
     });
 
     // Initialize ImageMapResizer plugin
