@@ -78,18 +78,4 @@ export default async (app) => {
     })
     .enable();
 
-  /**
-   * Copy static files
-   *
-   * Use the CopyWebpackPlugin to copy static files from the resources directory
-   * to the public directory during the build process.
-   */
-  app.use({
-    name: 'copy-html',
-    make: () => new CopyWebpackPlugin({
-      patterns: [
-        { from: 'views/explorer/left.html', to: 'sections/explorer/left.html' },
-      ],
-    }),
-  });
 };
