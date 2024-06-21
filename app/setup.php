@@ -15,6 +15,10 @@ use function Roots\bundle;
  */
 add_action('wp_enqueue_scripts', function () {
     bundle('app')->enqueue();
+
+    // Enqueue Bootstrap Icons CSS
+    wp_enqueue_style('bootstrap-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css', [], null);
+    
 }, 100);
 
 /**
