@@ -42,9 +42,9 @@
                     <img src="@asset('images/explorer/explorer_main.jpg')" usemap="#image-map" class="map" id="mainExplorerImage">
 
                     <map name="image-map">
-                        <area href="#modalWindow" data-id="1420" target="" alt="Left Side" title="Left Side" coords="5,434,83,533,210,610,344,634,417,540,568,478,665,431,800,373,834,372,735,101,664,98,489,213,398,259" shape="poly">
-                        <area href="#modalWindow" data-id="1418" target="" alt="Center" title="Center" coords="746,97,769,151,789,206,816,284,839,346,850,375,971,416,1071,440,1153,462,1206,462,1540,57,1495,50" shape="poly">
-                        <area href="#modalWindow" data-id="1357" target="" alt="Right" title="Right" coords="1262,447,1282,465,1316,479,1346,481,1389,479,1416,479,1451,477,1487,482,1532,490,1572,496,1595,511,1619,516,1675,484,1780,401,1697,345,1599,302,1533,259,1473,220,1454,218,1395,264,1335,328,1292,382,1263,419" shape="poly">
+                        <area href="#leftModalWindow" target="" alt="Left Side" title="Left Side" coords="5,434,83,533,210,610,344,634,417,540,568,478,665,431,800,373,834,372,735,101,664,98,489,213,398,259" shape="poly">
+                        <area href="#centerModalWindow" target="" alt="Center" title="Center"  coords="746,97,769,151,789,206,816,284,839,346,850,375,971,416,1071,440,1153,462,1206,462,1540,57,1495,50" shape="poly">
+                        <area href="#rightModalWindow" target="" alt="Right" title="Right" coords="1262,447,1282,465,1316,479,1346,481,1389,479,1416,479,1451,477,1487,482,1532,490,1572,496,1595,511,1619,516,1675,484,1780,401,1697,345,1599,302,1533,259,1473,220,1454,218,1395,264,1335,328,1292,382,1263,419" shape="poly">
                     </map>
                 </div>
             </div>
@@ -52,19 +52,47 @@
     </div>
 </section>
 
-<!-- Fullscreen Modal -->
-<div class="modal fade" id="modalWindow" tabindex="-1" aria-labelledby="modalWindowLabel" aria-hidden="true" style="background-color: #212721;">
+<!-- Fullscreen Modals -->
+<div class="modal fade" id="leftModalWindow" tabindex="-1" aria-labelledby="leftModalWindowLabel" aria-hidden="true" style="background-color: #212721;">
     <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
             <div class="modal-header" style="background: #212721">
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div id="modalContent">
-                    @if (shortcode_exists('drawattention'))
-                        {!! do_shortcode('[drawattention ID=1419]') !!}
-                    @endif
-                </div>
+                @if (shortcode_exists('drawattention'))
+                    {!! do_shortcode('[drawattention ID=1420]') !!}
+                @endif
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="centerModalWindow" tabindex="-1" aria-labelledby="centerModalWindowLabel" aria-hidden="true" style="background-color: #212721;">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header" style="background: #212721">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                @if (shortcode_exists('drawattention'))
+                    {!! do_shortcode('[drawattention ID=1418]') !!}
+                @endif
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="rightModalWindow" tabindex="-1" aria-labelledby="rightModalWindowLabel" aria-hidden="true" style="background-color: #212721;">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header" style="background: #212721">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                @if (shortcode_exists('drawattention'))
+                    {!! do_shortcode('[drawattention ID=1357]') !!}
+                @endif
             </div>
         </div>
     </div>
@@ -72,17 +100,30 @@
 
 <script>
     jQuery(document).ready(function($) {
-        // Function to update the modal content
-        function updateModalContent(id) {
-            $('#modalContent').html('{!! do_shortcode("[drawattention ID=\'" + id + "\']") !!}');
-        }
-
-        // Show the modal when an area is clicked
-        $('area[href="#modalWindow"]').click(function(event) {
+        // Show the modal when the area is clicked
+        $('area[href="#leftModalWindow"]').click(function(event) {
             event.preventDefault(); // Prevent default link behavior
-            var id = $(this).data('id');
-            updateModalContent(id);
-            $('#modalWindow').modal('show').on('shown.bs.modal', function () {
+            $('#leftModalWindow').modal('show').on('shown.bs.modal', function () {
+                // Initialize hotspots after the modal is shown
+                setTimeout(function() {
+                    hotspots.init();
+                }, 100);
+            });
+        });
+
+        $('area[href="#centerModalWindow"]').click(function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            $('#centerModalWindow').modal('show').on('shown.bs.modal', function () {
+                // Initialize hotspots after the modal is shown
+                setTimeout(function() {
+                    hotspots.init();
+                }, 100);
+            });
+        });
+
+        $('area[href="#rightModalWindow"]').click(function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            $('#rightModalWindow').modal('show').on('shown.bs.modal', function () {
                 // Initialize hotspots after the modal is shown
                 setTimeout(function() {
                     hotspots.init();
