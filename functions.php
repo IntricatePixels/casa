@@ -200,3 +200,9 @@ function allow_svg_upload( $mimes ) {
 }
 add_filter( 'upload_mimes', 'allow_svg_upload' );
 
+function custom_mime_types($mimes) {
+  $mimes['gif'] = 'image/gif';
+  return $mimes;
+}
+add_filter('upload_mimes', 'custom_mime_types');
+
