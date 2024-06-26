@@ -1,6 +1,6 @@
 {{--
   Template Name: New Main Template
-  Template Post Type: post, page, product, lp
+  Template Post Type: post, page
 --}}
 
 @extends('layouts.app')
@@ -14,7 +14,6 @@
             <div class="container">
                 @include('partials.content-page')
             </div>
-            @include('partials.content-contact-form')
         @endwhile
     @endif
 @endsection

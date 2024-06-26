@@ -1,3 +1,8 @@
+
+@php 
+    $blog_id = get_current_blog_id();
+@endphp
+
 <nav class="navbar sticky-top p-0 navbar-expand-xl position-absolute w-100">
     <div class="header-container mt-3 mb-3 mt-lg-2 mb-lg-2">
         <div class="header-logo">
@@ -22,7 +27,7 @@
             </div>
 
             <div class="d-block d-xl-none">
-                @if ($mimeo_current_lang_id == '1')
+                @if ($blog_id == '1')
                     <a href="{{ esc_url(home_url('/')) }}kontakt/" title="Kontakt"
                         class="header-search-icon px-md-2">
                         <img class="header-contact-icon no-lazy" width="16" height="12" src="@asset('images/icon_header_envelope_new.svg')"
@@ -34,10 +39,6 @@
                             alt="contact mimeo"><span class="d-none d-md-block ps-1 text-white">Contact</span></a>
                 @endif
             </div>
-
-            <!-- <a class="d-lg-block d-none btn btn-outline-secondary text-white border border-white me-sm-2 py-0 px-3 d-flex align-items-center" href="#contact" id="signUpButtonLink">
-                <span>Kontakt</span>
-            </a> -->
             <style>
       
         .navbar-toggler-icon {
@@ -52,16 +53,3 @@
         </div>
     </div>
 </nav>
-
-{{-- Display Yoast Breadcrumb everywhere but main Mimeo Big homepage --}}
-<!--
-@if (!is_front_page())
-@if (function_exists('rank_math_the_breadcrumbs'))
-<section class="breadcrumb bg-lighter">
-    <div class="header-container">
-        {{ rank_math_the_breadcrumbs('<p id="breadcrumbs">', '</p>') }}
-    </div>
-</section>
-@endif
-@endif
--->
