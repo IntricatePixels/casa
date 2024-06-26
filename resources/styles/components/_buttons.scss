@@ -44,6 +44,7 @@ $arrow-position-top: 8px;
 
     &:hover {
       background-color: $color-brown-hover-bg;
+      color: $color-gray-text;
 
       &::after {
         content: $arrow-brown;
