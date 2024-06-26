@@ -209,6 +209,6 @@ add_filter('upload_mimes', 'custom_mime_types');
 
 function does_drawattention_id_exist($id) {
   global $wpdb;
-  $post_exists = $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM {$wpdb->posts} WHERE ID = %d AND post_type = 'drawattention'", $id));
+  $post_exists = $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM {$wpdb->posts} WHERE ID = %d AND post_type = 'da_image'", $id));
   return $post_exists > 0;
 }
