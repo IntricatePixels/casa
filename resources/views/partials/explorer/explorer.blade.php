@@ -60,9 +60,7 @@
     <div class="modal fade" id="{{ $side }}ModalWindow" tabindex="-1" aria-labelledby="{{ $side }}ModalWindowLabel" aria-hidden="true" style="background-color: #212721;">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
-                <div class="modal-header" style="background: #212721">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
                     @if ($idExists && shortcode_exists('drawattention'))
                         {!! do_shortcode("[drawattention ID=$id]") !!}
