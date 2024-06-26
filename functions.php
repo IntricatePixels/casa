@@ -113,26 +113,6 @@ if (function_exists('acf_add_options_page')) {
   }
   
   
-  function multisite_body_classes($classes)
-  {
-    $id = get_current_blog_id();
-    $bodylangs = array(
-      1 => 'en-US',
-      2 => 'en-EU',
-      3 => 'de-DE',
-      6 => 'en-GB',
-    );
-    if (isset($bodylangs[$id])) {
-      $classes[] = $bodylangs[$id];
-    } else {
-      $classes[] = 'en-US';
-    }
-    return $classes;
-  }
-  
-  add_filter('body_class', 'multisite_body_classes');
-  
-  
   /**
    * Register Mega Menu Navwalker
    */
