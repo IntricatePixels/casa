@@ -54,6 +54,9 @@
 
 <!-- Fullscreen Modals -->
 @foreach(['left' => 1420, 'center' => 1418, 'right' => 1357] as $side => $id)
+    @php
+        $idExists = does_drawattention_id_exist($id);
+    @endphp
     <div class="modal fade" id="{{ $side }}ModalWindow" tabindex="-1" aria-labelledby="{{ $side }}ModalWindowLabel" aria-hidden="true" style="background-color: #212721;">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
@@ -61,8 +64,10 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    @if (shortcode_exists('drawattention'))
+                    @if ($idExists && shortcode_exists('drawattention'))
                         {!! do_shortcode("[drawattention ID=$id]") !!}
+                    @else
+                        <p class="text-center">Content not available.</p>
                     @endif
                 </div>
             </div>
