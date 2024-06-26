@@ -3,7 +3,7 @@ body {
   scroll-behavior: xsooth;
   font-weight: 300;
   font-size: 1rem;
-  font-family: 'Helvetica', sans-serif;   
+  font-family: 'Helvetica Neue', sans-serif;  
   background: white;
   text-rendering: geometricprecision;
   color: $font-green;
@@ -19,7 +19,6 @@ body {
 p, 
 div {
   font-weight: 300;
-  font-weight: bold;
   color: #81755f;
 }
 
@@ -35,8 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Helvetica', sans-serif !important;
-  font-weight: 700 !important;
+  font-family: 'Helvetica Neue', sans-serif;  
   color: var(--bs-heading-color, inherit);
 }
 
