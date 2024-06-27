@@ -20,7 +20,7 @@
                 "layout_659bd649f9752": {
                     "key": "layout_659bd649f9752",
                     "name": "big_cta",
-                    "label": "New - Big CTA",
+                    "label": "Big CTA",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -126,7 +126,7 @@
                 "layout_666fa36f0854e": {
                     "key": "layout_666fa36f0854e",
                     "name": "explorer",
-                    "label": "New - Explorer",
+                    "label": "Explorer",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -176,7 +176,7 @@
                 "layout_65ccb1ea7fa92": {
                     "key": "layout_65ccb1ea7fa92",
                     "name": "case_study",
-                    "label": "New - Case Study",
+                    "label": "Case Study",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -325,7 +325,7 @@
                 "layout_662a502f89365": {
                     "key": "layout_662a502f89365",
                     "name": "boxes",
-                    "label": "New - Boxes",
+                    "label": "Boxes",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -496,7 +496,7 @@
                 "layout_663b60aec79e5": {
                     "key": "layout_663b60aec79e5",
                     "name": "boxes_contact",
-                    "label": "New - Boxes Contact",
+                    "label": "Boxes Contact",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -693,7 +693,7 @@
                 "layout_62053f2592bec": {
                     "key": "layout_62053f2592bec",
                     "name": "three_columns_icons",
-                    "label": "New - Content Displayed in Columns",
+                    "label": "Content Displayed in Columns",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -1001,7 +1001,7 @@
                 "layout_61dde0a27c856": {
                     "key": "layout_61dde0a27c856",
                     "name": "faqs",
-                    "label": "New - FAQs",
+                    "label": "FAQs",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -1140,7 +1140,7 @@
                 "layout_659e93f611f81": {
                     "key": "layout_659e93f611f81",
                     "name": "faqs_new_layout",
-                    "label": "New - FAQs New Layout",
+                    "label": "FAQs New Layout",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -1311,7 +1311,7 @@
                 "layout_65644f3747962": {
                     "key": "layout_65644f3747962",
                     "name": "two_columns_block_form",
-                    "label": "New - Form with Two Column Layout",
+                    "label": "Form with Two Column Layout",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -1484,7 +1484,7 @@
                 "layout_61dc295670f6d": {
                     "key": "layout_61dc295670f6d",
                     "name": "cta_full_width_bg_image",
-                    "label": "New - Full Width Background Image CTA ",
+                    "label": "Full Width Background Image CTA ",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -1666,7 +1666,7 @@
                 "layout_65ca15243080d": {
                     "key": "layout_65ca15243080d",
                     "name": "hero_banner_pillar_page",
-                    "label": "New - Hero Pillar Page",
+                    "label": "Hero Banner",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -1920,7 +1920,7 @@
                 "layout_649199e0471fb": {
                     "key": "layout_649199e0471fb",
                     "name": "in_page_menu_links",
-                    "label": "New - In Page Menu Links",
+                    "label": " In Page Menu Links",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -1995,7 +1995,7 @@
                 "layout_6203f319dc7a7": {
                     "key": "layout_6203f319dc7a7",
                     "name": "in_numbers",
-                    "label": "New - In Numbers",
+                    "label": "In Numbers",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -2170,7 +2170,7 @@
                 "layout_64b68696cb932": {
                     "key": "layout_64b68696cb932",
                     "name": "manual_product_grid",
-                    "label": "New - Image\/Text Grid ",
+                    "label": "Image\/Text Grid ",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -2375,7 +2375,7 @@
                 "layout_65cb38f686974": {
                     "key": "layout_65cb38f686974",
                     "name": "image_with_list",
-                    "label": "New - Image with List",
+                    "label": "Image with List",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -2669,10 +2669,48 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_667cec9edd7f3": {
+                    "key": "layout_667cec9edd7f3",
+                    "name": "image_gallery_slider",
+                    "label": "Image Gallery Slider",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_667cecb4dd7f5",
+                            "label": "images",
+                            "name": "images",
+                            "aria-label": "",
+                            "type": "gallery",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min": "",
+                            "max": "",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "insert": "append",
+                            "preview_size": "medium"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_65f460d68ff90": {
                     "key": "layout_65f460d68ff90",
                     "name": "image_with_list_logos",
-                    "label": "New - Image with List - Logos",
+                    "label": "Image with List - Logos",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -2898,7 +2936,7 @@
                 "layout_65ddc7b25f3ca": {
                     "key": "layout_65ddc7b25f3ca",
                     "name": "icons_list",
-                    "label": "New - Icons List ",
+                    "label": "Icons List ",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -3050,7 +3088,7 @@
                 "layout_64b796c537214": {
                     "key": "layout_64b796c537214",
                     "name": "product_grid",
-                    "label": "New - Products Grid",
+                    "label": "Products Grid",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -3167,7 +3205,7 @@
                 "layout_61ddbe650ee51": {
                     "key": "layout_61ddbe650ee51",
                     "name": "two_panels_with_image",
-                    "label": "New - Two Panels with Image",
+                    "label": "Two Panels with Image",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -3606,5 +3644,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1719458146
+    "modified": 1719463233
 }

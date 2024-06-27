@@ -8,6 +8,7 @@
         @include('partials/newblocks/new-block-in-page-links')
         @include('partials/newblocks/new-block-pillar-page')
         @include('partials/newblocks/new-block-case-study')
+        @include('partials/newblocks/new-block-image-gallery-slider')
         @include('partials/newblocks/new-block-image-with-list')
         @include('partials/newblocks/new-block-image-with-list-logos')
         @include('partials/newblocks/new-block-icons-list')
