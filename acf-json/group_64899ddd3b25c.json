@@ -2201,9 +2201,9 @@
                             "placeholder": ""
                         },
                         {
-                            "key": "field_64b68696cb933",
-                            "label": "Header",
-                            "name": "header",
+                            "key": "field_659ea7b8f64d7",
+                            "label": "Header Eyebrow",
+                            "name": "header_eyebrow",
                             "aria-label": "",
                             "type": "text",
                             "instructions": "",
@@ -2221,9 +2221,9 @@
                             "append": ""
                         },
                         {
-                            "key": "field_659ea7b8f64d7",
-                            "label": "Header Eyebrow",
-                            "name": "header_eyebrow",
+                            "key": "field_64b68696cb933",
+                            "label": "Header",
+                            "name": "header",
                             "aria-label": "",
                             "type": "text",
                             "instructions": "",
@@ -2261,26 +2261,6 @@
                             "new_lines": ""
                         },
                         {
-                            "key": "field_64b68d805420e",
-                            "label": "Behind Header Text",
-                            "name": "behind_header_text",
-                            "aria-label": "",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "25",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": ""
-                        },
-                        {
                             "key": "field_64b68696cb935",
                             "label": "Grid",
                             "name": "grid",
@@ -2294,7 +2274,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "layout": "table",
+                            "layout": "row",
                             "min": 0,
                             "max": 0,
                             "collapsed": "",
@@ -2371,7 +2351,7 @@
                                 },
                                 {
                                     "key": "field_667c7f2486481",
-                                    "label": "link",
+                                    "label": "Link",
                                     "name": "link",
                                     "aria-label": "",
                                     "type": "link",
@@ -3626,5 +3606,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1719435066
+    "modified": 1719458146
 }

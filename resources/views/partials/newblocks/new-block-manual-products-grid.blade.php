@@ -1,44 +1,62 @@
+
 @if (get_row_layout() == 'manual_product_grid')
     @php
+        $max_width_980 = '';
 
-    $max_width_980 = '';
+        if (get_sub_field('columns')) {
+            $columns = get_sub_field('columns');
+        } else {
+            $columns = "col-md-4";
+        }
 
-      if( get_sub_field('columns') ) {
-        $columns = get_sub_field('columns');
-      }
-      else {
-        $columns = "col-md-4";
-      }
+        if ($columns === 'col-md-6') {
+            $max_width_980 = 'max-width-980';
+        }
 
-      if ($columns === 'col-md-6') {
-        $max_width_980 = 'max-width-980';
-      }
+        $column_padding = '';
+        if ($columns === 'col-md-4') {
+            $column_padding = 'pe-5';
+        }
     @endphp
-    <section class="block new block-products-grid in-page-section px-lg-4 px-4 px-md-0 pb-5 mt-0 {{ $max_width_980 }}" id="product-grid-{{ get_row_index() }}" data-section-name="">
+
+    <section class="block new block-products-grid in-page-section px-lg-4 px-4 px-md-0 pb-5 mt-0 {{ $max_width_980 }} py-5" id="product-grid-{{ get_row_index() }}" data-section-name="">
         <div class="container">
             <div class="col-12 mt-lg-5">
                 <p class="hero-eyebrow">{{ the_sub_field('header_eyebrow') }}</p>
-                <h2 class="mb-3 pt-0 mt-0 font-black text-center" data-title="{{ the_sub_field('behind_header_text') }}">
-                    {{ the_sub_field('header') }}</h2>
+                <h2 class="mb-3 pt-0 mt-0 font-black text-center">{{ the_sub_field('header') }}</h2>
                 <div class="block-subheader mb-5">{{ the_sub_field('subhead') }}</div>
             </div>
             <div class="row gx-5 gy-4">
                 @if (have_rows('grid'))
                     @while (have_rows('grid'))
-                        @php the_row();
-                          $image = get_sub_field('image');
-                          $column_padding = '';
-                          if ($columns === 'col-md-4') {
-                              $column_padding = 'pe-5';
-                          }
+                        @php
+                            the_row();
+                            $image = get_sub_field('image');
+                            $subtitle = get_sub_field('subtitle');
+                            $subtext = get_sub_field('subtext');
+                            $link = get_sub_field('link');
                         @endphp
-                        <div class="{{ $columns }}">
-                            <div class="post-card-content p-0">
+                        <div class="{{ $columns }} border-end-custom">
+                            <div class="post-card-content py-5 px-3">
                                 @if ($image)
-                                  <img src="{{ esc_url($image['url']) }}" alt="{{ esc_attr($image['alt']) }}" class="product-block mb-0 size-product-block" loading="lazy" />
+                                    <img src="{{ esc_url($image['url']) }}" alt="{{ esc_attr($image['alt']) }}" class="product-block mb-0 size-product-block" loading="lazy" />
                                 @endif
-                                <p class="prod-grid-title font-bold mt-3 mb-2">{{ the_sub_field('subtitle') }}</p>
-                                <p class="p-0">{{ the_sub_field('subtext') }}</p>
+                                @if ($subtitle)
+                                    <h2 class="prod-grid-title font-bold mt-3 mb-2 fs-5">{!! $subtitle !!}</h2>
+                                @endif
+                                @if ($subtext)
+                                    <p class="p-0">{!! $subtext !!}</p>
+                                @endif
+                                @if ($link)
+                                    @php
+                                        $link_url = $link['url'];
+                                        $link_title = $link['title'];
+                                        $link_target = $link['target'] ? $link['target'] : '_self';
+                                    @endphp
+                                    <a class="btn btn-link position-relative mt-2" href="@php echo esc_url( $link_url ) @endphp" target="@php echo esc_attr( $link_target ) @endphp">
+                                        @php echo esc_html( $link_title ) @endphp
+                                    </a>
+                                @endif
                             </div>
                         </div>
                     @endwhile

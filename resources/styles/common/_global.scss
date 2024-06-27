@@ -71,3 +71,11 @@ img {
   top: auto;
   width: 1px;
 }
+
+.border-end-custom {
+  border-right: 1px solid #81755f; /* Adjust the color and style as needed */
+}
+
+.border-end-custom:last-child {
+  border-right: none;
+}
