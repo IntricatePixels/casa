@@ -42,10 +42,10 @@
                                     <img src="{{ esc_url($image['url']) }}" alt="{{ esc_attr($image['alt']) }}" class="product-block mb-0 size-product-block" loading="lazy" />
                                 @endif
                                 @if ($subtitle)
-                                    <h2 class="prod-grid-title font-bold mt-3 mb-2 fs-5">{!! $subtitle !!}</h2>
+                                    <h2 class="prod-grid-title font-bold mt-4 mb-3 fs-5">{!! $subtitle !!}</h2>
                                 @endif
                                 @if ($subtext)
-                                    <p class="p-0">{!! $subtext !!}</p>
+                                    <p class="p-0"><small>{!! $subtext !!}</small></p>
                                 @endif
                                 @if ($link)
                                     @php
