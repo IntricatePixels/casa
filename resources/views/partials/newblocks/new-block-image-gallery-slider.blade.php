@@ -5,7 +5,7 @@
     @endphp
     
     @if ($gallery_images)
-        <section class="block py-5 my-5" id="imageSlider">
+        <section class="block py-5 my-lg-5" id="imageSlider">
             <div id="carouselSlideGallery" class="carousel carousel-dark slide" data-bs-ride="false" data-bs-pause="false">
                 <div class="carousel-inner">
                     @foreach ($gallery_images as $index => $image)
