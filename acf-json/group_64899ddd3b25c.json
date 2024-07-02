@@ -2169,37 +2169,10 @@
                 },
                 "layout_64b68696cb932": {
                     "key": "layout_64b68696cb932",
-                    "name": "manual_product_grid",
+                    "name": "images_text_grid",
                     "label": "Image\/Text Grid ",
                     "display": "block",
                     "sub_fields": [
-                        {
-                            "key": "field_659e8f856e055",
-                            "label": "Columns",
-                            "name": "columns",
-                            "aria-label": "",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "col-md-6": "2 Columns",
-                                "col-md-4": "3 Columns",
-                                "col-md-3": "4 Columns"
-                            },
-                            "default_value": false,
-                            "return_format": "value",
-                            "multiple": 0,
-                            "allow_null": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "placeholder": ""
-                        },
                         {
                             "key": "field_659ea7b8f64d7",
                             "label": "Header Eyebrow",
@@ -3561,6 +3534,33 @@
             "min": "",
             "max": "",
             "button_label": "Add Row"
+        },
+        {
+            "key": "field_659e8f856e055",
+            "label": "Columns",
+            "name": "columns",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "col-lg-6": "2 Columns",
+                "col-lg-4": "3 Columns",
+                "col-lg-3": "4 Columns"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
         }
     ],
     "location": [
@@ -3644,5 +3644,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1719463233
+    "modified": 1719934094
 }

@@ -36,7 +36,7 @@
                             $subtext = get_sub_field('subtext');
                             $link = get_sub_field('link');
                         @endphp
-                        <div class="{{ $columns }} col-6 col-sm-12 border-end-custom">
+                        <div class="{{ $columns }} col-6 col-sm-12border-end-custom">
                             <div class="post-card-content py-5 px-3">
                                 @if ($image)
                                     <img src="{{ esc_url($image['url']) }}" alt="{{ esc_attr($image['alt']) }}" class="product-block mb-0 size-product-block" loading="lazy" />
