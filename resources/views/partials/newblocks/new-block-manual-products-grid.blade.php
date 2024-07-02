@@ -1,5 +1,5 @@
 
-@if (get_row_layout() == 'images_text_grid')
+@if (get_row_layout() == 'manual_product_grid')
     @php
         $max_width_980 = '';
 
