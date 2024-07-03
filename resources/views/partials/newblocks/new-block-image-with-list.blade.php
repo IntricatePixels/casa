@@ -45,7 +45,7 @@
                             @if ($title)
                               <h4 class="p-0 mb-2 fs-5 font-bold @if ( get_row_index() != 1 ) pt-3 @endif">{!! $title !!}</h4>
                             @endif
-                            <div class="px-lg-5 px-3 mb-3">{{ $descr }}</div>
+                            <div class="px-lg-5 px-3 mb-3">{!! $descr !!}</div>
                             @if ($link)
                                 @php
                                     $link_url = $link['url'];
