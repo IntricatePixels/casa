@@ -14,20 +14,7 @@
 
             <!-- Right Column for Newsletter Signup and Social Media Icons -->
             <div class="col-lg-9 d-flex justify-content-end flex-column align-items-end">
-                <div class="card border-0 bg-transparent">
-                        <h3>Newsletter</h3>
-                        <!-- Replace with your Contact Form 7 shortcode -->
-                        <?php echo do_shortcode('[contact-form-7 id="eb7b80d" title="Newsletter Sign Up"]'); ?>
-                        <div class="mt-3">
-                    <!-- Social Media Icons with Links -->
-                    <a href="https://facebook.com/your-page" class="btn btn-outline-dark me-2">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="https://instagram.com/your-page" class="btn btn-outline-dark">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                </div>
-                </div>
+                
                 
             </div>
         </div>
