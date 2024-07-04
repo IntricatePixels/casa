@@ -24,7 +24,7 @@
                   <div id="galleryCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" >
                     <div class="carousel-inner">
                       @foreach ($gallery as $index => $image)
-                        <div class="carousel-item  @if ($index == 0) active @endif" data-bs-interval="2000">
+                        <div class="carousel-item  @if ($index == 0) active @endif" data-bs-interval="3000">
                           <img width="318" height="288" src="{{ esc_url($image['url']) }}" alt="{{ esc_attr($image['alt']) }}" loading="lazy" class="d-block w-100" />
                         </div>
                       @endforeach
