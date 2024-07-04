@@ -27,9 +27,9 @@
           @endif
           </div>
           <div class="row g-5">
-              <div class="col-12 col-lg-6 d-flex align-items-center @if ( $swap_sides ) order-lg-2 @else order-lg-1 ps-lg-0 @endif">
+              <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center @if ( $swap_sides ) order-lg-2 @else order-lg-1 ps-lg-0 @endif">
                 @if ($gallery)
-                  <div id="galleryCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+                  <div id="galleryCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" style="max-width: 800px;">
                     <div class="carousel-inner">
                       @foreach ($gallery as $index => $image)
                         <div class="carousel-item  @if ($index == 0) active @endif" data-bs-interval="3500">
