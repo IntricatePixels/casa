@@ -6,7 +6,15 @@
       $swap_sides = get_sub_field('swap_sides');
     @endphp
 
-    
+    <style>
+    .carousel-item {
+    transition: transform 2s ease-in-out;
+  }
+  .carousel-fade .active.carousel-item-start,
+  .carousel-fade .active.carousel-item-end {
+    transition: opacity 0s 2s;
+  }
+</style>    
     <section class="block-image-with-list px-lg-4 px-4 px-md-0 py-5 my-0 in-page-section" id="list-{{ get_row_index() }}" data-section-name="" style="background-color: #f4f0f3;">
         <div class="container">
           @if ($header)
@@ -24,8 +32,8 @@
                   <div id="galleryCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" >
                     <div class="carousel-inner">
                       @foreach ($gallery as $index => $image)
-                        <div class="carousel-item  @if ($index == 0) active @endif" data-bs-interval="3000">
-                          <img width="318" height="288" src="{{ esc_url($image['url']) }}" alt="{{ esc_attr($image['alt']) }}" loading="lazy" class="d-block w-100" />
+                        <div class="carousel-item  @if ($index == 0) active @endif" data-bs-interval="4000">
+                          <img width="318" height="288" src="{{ esc_url($image['url']) }}" alt="{{ esc_attr($image['alt']) }}" loading="lazy" class="d-block w-auto" />
                         </div>
                       @endforeach
                     </div>
