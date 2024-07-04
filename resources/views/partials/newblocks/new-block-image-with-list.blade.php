@@ -1,10 +1,11 @@
 @if (get_row_layout() == 'image_with_list')
-    
+
     @php 
       $header = get_sub_field('header');
-      $image = get_sub_field('image');
+      $gallery = get_sub_field('image_gallery');
       $swap_sides = get_sub_field('swap_sides');
     @endphp
+
     
     <section class="block-image-with-list px-lg-4 px-4 px-md-0 py-5 my-0 in-page-section" id="list-{{ get_row_index() }}" data-section-name="" style="background-color: #f4f0f3;">
         <div class="container">
@@ -15,12 +16,21 @@
                 <h3 class="fs-1 font-black mb-3 pt-0 mt-0">{!! $header !!}</h3>
                 <div>{!! the_sub_field('subhead') !!}</div>
             </div>
-          </div>
           @endif
+          </div>
           <div class="row g-5">
               <div class="col-12 col-lg-6 d-flex align-items-center @if ( $swap_sides ) order-lg-2 @else order-lg-1 ps-lg-0 @endif">
-                @if ($image)
-                  <img width="318" height="288" src="{{ esc_url($image['url']) }}" alt="{{ esc_attr($image['alt']) }}" loading="lazy" />
+                @if ($gallery)
+                  <div id="galleryCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+                    <div class="carousel-inner">
+                      @foreach ($gallery as $index => $image)
+                        <div class="carousel-item  @if ($index == 0) active @endif" data-bs-interval="2000">
+                          <img width="318" height="288" src="{{ esc_url($image['url']) }}" alt="{{ esc_attr($image['alt']) }}" loading="lazy" class="d-block w-100" />
+                        </div>
+                      @endforeach
+                    </div>
+                   
+                  </div>
                 @endif
               </div>
               <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center text-center @if ( $swap_sides ) order-lg-1 @else order-lg-2 @endif">
