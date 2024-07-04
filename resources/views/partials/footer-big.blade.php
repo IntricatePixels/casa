@@ -5,17 +5,11 @@
     <div class="container pt-5">
         <div class="row">
             <!-- Left Column for WordPress Menu -->
-            <div class="col-lg-3">
+            <div class="col-12">
                 @if (is_active_sidebar('sidebar-footer'))
                 @php dynamic_sidebar('sidebar-footer') @endphp
 
                 @endif
-            </div>
-
-            <!-- Right Column for Newsletter Signup and Social Media Icons -->
-            <div class="col-lg-9 d-flex justify-content-end flex-column align-items-end">
-                
-                
             </div>
         </div>
     </div>
