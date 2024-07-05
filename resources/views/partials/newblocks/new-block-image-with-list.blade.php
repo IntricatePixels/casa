@@ -45,14 +45,16 @@
               <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center text-center @if ( $swap_sides ) order-lg-1 @else order-lg-2 @endif">
                 
                 @if ($icon_image)
-                  <img width="80" height="80" src="{{ esc_url($icon_image['url']) }}" alt="{{ esc_attr($icon_image['alt']) }}" loading="lazy" class="d-block mb-1" style="width: 80px; height: 80px;" />
+                  <img width="80" height="80" src="{{ esc_url($icon_image['url']) }}" alt="{{ esc_attr($icon_image['alt']) }}" loading="lazy" class="d-block mb-3" style="width: 80px; height: 80px;" />
                 @endif
                 
                 @if (get_sub_field('panel_eyebrow'))
                   <h2 class="hero-eyebrow text-start">{{ the_sub_field('panel_eyebrow') }}</h2>
                 @endif
-                
-                <h3 class="fs-2 pb-4 font-black">{{ the_sub_field('panel_header') }}</h3>
+
+                @if (get_sub_field('panel_header'))
+                  <h3 class="fs-2 pb-4 font-black">{{ the_sub_field('panel_header') }}</h3>
+                @endif
 
                 @php $grid = get_sub_field('grid'); @endphp
                 @if ($grid && count($grid) > 0)
