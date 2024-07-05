@@ -66,7 +66,7 @@
                             $descr = get_sub_field('descr');
                             $link = get_sub_field('link'); 
                           @endphp
-                          <div class="pb-5 @if ($count > 1 ) ps-4 ps-lg-5 border-dotted @if ( get_row_index() === 1  ) border-blue @endif @endif">
+                          <div class="pb-3 @if ($count > 1 ) ps-4 ps-lg-5 border-dotted @if ( get_row_index() === 1  ) border-blue @endif @endif">
                           @if ($title)
                             <h4 class="p-0 mb-4 fs-4 fw-bold @if ( get_row_index() != 1 ) pt-3 @endif">{!! $title !!}</h4>
                           @endif
