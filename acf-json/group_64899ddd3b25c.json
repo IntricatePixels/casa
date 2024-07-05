@@ -2456,6 +2456,31 @@
                             "new_lines": ""
                         },
                         {
+                            "key": "field_6687d43b5dbde",
+                            "label": "Icon Image",
+                            "name": "icon_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium"
+                        },
+                        {
                             "key": "field_65cb3ebe5b5df",
                             "label": "Panel Eyebrow",
                             "name": "panel_eyebrow",
@@ -2465,7 +2490,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "50",
+                                "width": "",
                                 "class": "",
                                 "id": ""
                             },
@@ -2485,7 +2510,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "50",
+                                "width": "",
                                 "class": "",
                                 "id": ""
                             },
@@ -2505,7 +2530,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "30",
+                                "width": "",
                                 "class": "",
                                 "id": ""
                             },
@@ -2537,7 +2562,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "layout": "table",
+                            "layout": "row",
                             "min": 0,
                             "max": 0,
                             "collapsed": "",
@@ -3647,5 +3672,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1720099981
+    "modified": 1720177905
 }

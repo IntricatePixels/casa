@@ -4,6 +4,7 @@
       $header = get_sub_field('header');
       $gallery = get_sub_field('image_gallery');
       $swap_sides = get_sub_field('swap_sides');
+      $icon_image = get_sub_field('icon_image');
     @endphp
 
     <style>
@@ -37,12 +38,16 @@
                         </div>
                       @endforeach
                     </div>
-                   
+                    
                   </div>
                 @endif
               </div>
               <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center text-center @if ( $swap_sides ) order-lg-1 @else order-lg-2 @endif">
-
+                
+                @if ($icon_image)
+                  <img width="80" height="80" src="{{ esc_url($icon_image['url']) }}" alt="{{ esc_attr($icon_image['alt']) }}" loading="lazy" class="d-block mb-1" style="width: 80px; height: 80px;" />
+                @endif
+                
                 @if (get_sub_field('panel_eyebrow'))
                   <h2 class="hero-eyebrow text-start">{{ the_sub_field('panel_eyebrow') }}</h2>
                 @endif
@@ -60,19 +65,19 @@
                             $link = get_sub_field('link'); 
                           @endphp
                           <div class="pb-5 @if ($count > 1 ) ps-4 ps-lg-5 border-dotted @if ( get_row_index() === 1  ) border-blue @endif @endif">
-                            @if ($title)
-                              <h4 class="p-0 mb-2 fs-5 font-bold @if ( get_row_index() != 1 ) pt-3 @endif">{!! $title !!}</h4>
-                            @endif
-                            <div class="px-lg-5 px-3 mb-3 max-width-600">{!! $descr !!}</div>
-                            @if ($link)
-                                @php
-                                    $link_url = $link['url'];
-                                    $link_title = $link['title'];
-                                    $link_target = $link['target'] ? $link['target'] : '_self';
-                                @endphp
-                                <a class="btn btn-brown right-arrow pe-5 position-relative" href="{{ esc_url($link_url) }}"
-                                target="{{ esc_attr($link_target) }}">{{ esc_html($link_title) }}</a>
-                            @endif
+                          @if ($title)
+                            <h4 class="p-0 mb-4 fs-4 fw-bold @if ( get_row_index() != 1 ) pt-3 @endif">{!! $title !!}</h4>
+                          @endif
+                          <div class="px-lg-5 px-3 mb-3 max-width-600">{!! $descr !!}</div>
+                          @if ($link)
+                              @php
+                                  $link_url = $link['url'];
+                                  $link_title = $link['title'];
+                                  $link_target = $link['target'] ? $link['target'] : '_self';
+                              @endphp
+                              <a class="btn btn-brown right-arrow pe-5 position-relative" href="{{ esc_url($link_url) }}"
+                              target="{{ esc_attr($link_target) }}">{{ esc_html($link_title) }}</a>
+                          @endif
                           </div>
                       @endwhile
                   @endif
