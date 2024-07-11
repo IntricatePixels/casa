@@ -96,7 +96,9 @@ header h2 {
 }
 
 section.widget h3,
-footer h3 {
+footer h3, 
+section.widget h2,
+footer h2 {
   font-size: 1.1875rem;
   font-weight: 600;
   margin-bottom: 1rem;
