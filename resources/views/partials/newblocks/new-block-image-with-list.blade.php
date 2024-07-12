@@ -1,4 +1,4 @@
-@if (get_row_layout() == 'image_with_list')
+  @if (get_row_layout() == 'image_with_list')
 
     @php 
       $header = get_sub_field('header');
@@ -8,14 +8,31 @@
     @endphp
 
     <style>
-    .carousel-item {
-    transition: transform 2s ease-in-out;
-  }
-  .carousel-fade .active.carousel-item-start,
+
+.carousel-fade .active.carousel-item-start,
   .carousel-fade .active.carousel-item-end {
     transition: opacity 0s 2s;
   }
-</style>    
+
+   .carousel-item {
+      transition: transform 2s ease-in-out;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        max-height: 700px; /* Adjust this value as needed */
+        object-fit: cover;
+    }
+    .carousel-inner {
+        display: flex;
+        align-items: center;
+    }
+    </style>
+    
     <section class="block-image-with-list px-lg-4 px-4 px-md-0 py-5 my-0 in-page-section" id="list-{{ get_row_index() }}" data-section-name="" style="background-color: #f4f0f3;">
         <div class="container">
           @if ($header)
@@ -33,8 +50,8 @@
                   <div id="galleryCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" style="max-width: 800px;">
                     <div class="carousel-inner">
                       @foreach ($gallery as $index => $image)
-                        <div class="carousel-item  @if ($index == 0) active @endif" data-bs-interval="3500">
-                          <img width="318" height="288" src="{{ esc_url($image['url']) }}" alt="{{ esc_attr($image['alt']) }}" loading="lazy" class="d-block" />
+                        <div class="carousel-item  @if ($index == 0) active @endif" data-bs-interval="4000">
+                          <img src="{{ esc_url($image['url']) }}" alt="{{ esc_attr($image['alt']) }}" loading="lazy" class="d-block" />
                         </div>
                       @endforeach
                     </div>
@@ -101,3 +118,4 @@
         </div>
     </section>
 @endif
+
