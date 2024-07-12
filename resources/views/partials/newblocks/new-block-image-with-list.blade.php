@@ -6,32 +6,6 @@
       $swap_sides = get_sub_field('swap_sides');
       $icon_image = get_sub_field('icon_image');
     @endphp
-
-    <style>
-
-.carousel-fade .active.carousel-item-start,
-  .carousel-fade .active.carousel-item-end {
-    transition: opacity 0s 2s;
-  }
-
-   .carousel-item {
-      transition: transform 2s ease-in-out;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .carousel-item img {
-        width: 100%;
-        height: auto;
-        max-height: 700px; /* Adjust this value as needed */
-        object-fit: cover;
-    }
-    .carousel-inner {
-        display: flex;
-        align-items: center;
-    }
-    </style>
     
     <section class="block-image-with-list px-lg-4 px-4 px-md-0 py-5 my-0 in-page-section" id="list-{{ get_row_index() }}" data-section-name="" style="background-color: #f4f0f3;">
         <div class="container">
