@@ -1,10 +1,5 @@
-.carousel-fade {
-    .carousel-inner {
-        display: flex;
-        align-items: center;
-    }
-
-    .carousel-item {
+.carousel-in-page {
+  .carousel-item {
       transition: transform 2s ease-in-out;
       width: 100%;
       display: flex;
@@ -14,27 +9,30 @@
       img {
         width: 100%;
         height: auto;
+        max-height: 500px;
         min-height: 400px;
-        max-height: 400px;
-        
-        @include media-breakpoint-up(md) {
-          min-height: 600px;
-          max-height: 600px;
-        }
-        
         @include media-breakpoint-up(lg) {
           min-height: 700px;
-          max-height: 700px;
+          max-height: 700px;;
         }
-        
+        @include media-breakpoint-up(md) {
+          min-height: 500px;
+        }
         object-fit: cover;
       }
     }
     
-    .active {
-      &.carousel-item-start,
-      &.carousel-item-end {
-        transition: opacity 0s 2s;
+    .carousel-fade {
+      .active {
+        &.carousel-item-start,
+        &.carousel-item-end {
+          transition: opacity 0s 2s;
+        }
       }
+    }
+    
+    .carousel-inner {
+      display: flex;
+      align-items: center;
     }
   }
