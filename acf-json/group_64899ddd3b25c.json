@@ -486,6 +486,49 @@
                                     "prepend": "",
                                     "append": "",
                                     "parent_repeater": "field_662a53036a93b"
+                                },
+                                {
+                                    "key": "field_6698309ff3ab9",
+                                    "label": "Image",
+                                    "name": "image",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "preview_size": "medium",
+                                    "parent_repeater": "field_662a53036a93b"
+                                },
+                                {
+                                    "key": "field_669830a9f3aba",
+                                    "label": "Link",
+                                    "name": "link",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "parent_repeater": "field_662a53036a93b"
                                 }
                             ]
                         }
@@ -682,6 +725,23 @@
                                     "rows": 4,
                                     "placeholder": "",
                                     "new_lines": "br",
+                                    "parent_repeater": "field_663b60aec79eb"
+                                },
+                                {
+                                    "key": "field_669830ea6ff05",
+                                    "label": "Link",
+                                    "name": "link",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
                                     "parent_repeater": "field_663b60aec79eb"
                                 }
                             ]
@@ -3562,33 +3622,6 @@
             "min": "",
             "max": "",
             "button_label": "Add Row"
-        },
-        {
-            "key": "field_659e8f856e055",
-            "label": "Columns",
-            "name": "columns",
-            "aria-label": "",
-            "type": "select",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "col-lg-6": "2 Columns",
-                "col-lg-4": "3 Columns",
-                "col-lg-3": "4 Columns"
-            },
-            "default_value": false,
-            "return_format": "value",
-            "multiple": 0,
-            "allow_null": 0,
-            "ui": 0,
-            "ajax": 0,
-            "placeholder": ""
         }
     ],
     "location": [
@@ -3672,5 +3705,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1720177905
+    "modified": 1721250210
 }
