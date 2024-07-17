@@ -17,7 +17,7 @@
                     <h2 class="mb-2 p-0 text-center text-lg-start font-black fs-2">
                         {{ the_sub_field('header') }}
                     </h2>
-                    <p class="headline mb-3">
+                    <p class="text-white mb-3">
                         {{ the_sub_field('sub_header') }}
                     </p>
                     <p class="text-center text-lg-start pe-lg-5">
@@ -35,7 +35,7 @@
                                 $link_title = $link['title'];
                                 $link_target = $link['target'] ? $link['target'] : '_self';
                             @endphp
-                            <a class="btn btn-outline-dark border-green text-white border-white px-3" href="@php echo esc_url( $link_url ) @endphp"
+                            <a class="btn btn-gray right-arrow mt-0 position-relative" href="@php echo esc_url( $link_url ) @endphp"
                                 target="@php echo esc_attr( $link_target ) @endphp">
                                 @php echo esc_html( $link_title ) @endphp
                             </a>
@@ -47,10 +47,10 @@
             @else 
             {{-- Horizontal --}}
             <div class="row">
-                <h2 class="mb-2 p-0">
+                <h2 class="fs-2 fw-bold mb-2 p-0">
                     {{ the_sub_field('header') }}
                 </h2>
-                <p class="headline mb-3 font-black">
+                <p class="mb-1 font-black text-white">
                     {{ the_sub_field('sub_header') }}
                 </p>
                 <p class="main-text">
@@ -66,7 +66,7 @@
                           $link_title = $link['title'];
                           $link_target = $link['target'] ? $link['target'] : '_self';
                       @endphp
-                      <a class="btn btn-white-blue mt-3 px-5" href="@php echo esc_url( $link_url ) @endphp"
+                      <a class="btn btn-gray right-arrow mt-0 position-relative" href="@php echo esc_url( $link_url ) @endphp"
                           target="@php echo esc_attr( $link_target ) @endphp">
                           @php echo esc_html( $link_title ) @endphp
                       </a>

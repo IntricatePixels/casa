@@ -22,7 +22,7 @@ section.faq .accordion .btn {
 }
 
 section.faq .accordion .btn.btn-link {
-  color: $font-green;
+  color: $brown;
 }
 
 section.faq.faq-new-layout {
@@ -58,13 +58,13 @@ section.faq.faq-new-layout .container {
 }
 
 .cta-banner-full-bg .hero-text h1 {
-  color: $font-green;
+  color: $brown;
   font-size: 2rem;
   font-weight: normal;
 }
 
 .cta-banner-full-bg .hero-text p {
-  color: $font-green;
+  color: $brown;
 }
 
 .block.block-product-list .splide__slide img,
@@ -137,7 +137,7 @@ section.faq.faq-new-layout .container {
 .block.block-product-list .card-title,
 .block.block-interested-in .card-title {
   font-size: 1rem;
-  color: $font-green;
+  color: $brown;
   text-decoration: none;
   margin: 10px 0;
   line-height: 1.2;
@@ -155,7 +155,7 @@ section.faq.faq-new-layout .container {
   display: block;
   text-align: right;
   font-size: 16px;
-  color: $font-green;
+  color: $brown;
   position: absolute;
   right: 1rem;
   bottom: 1rem;
@@ -269,7 +269,7 @@ ul.pagination li {
 }
 
 section.block.block-big-cta {
-  background-image: $custom-gradient;
+  background-color: $brown;
   color: #fff;
 
   >* {
