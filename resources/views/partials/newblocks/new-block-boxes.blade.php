@@ -36,7 +36,7 @@
                 </div>
                 <!-- Second column (rest of the width) -->
                 <div class="col-12 col-lg-8">
-                    <div class="row gy-5">
+                    <div class="row g-5">
 
                         @if (have_rows('boxes'))
                             @while (have_rows('boxes'))
@@ -47,13 +47,14 @@
                                     $descr = get_sub_field('description');
                                     $link = get_sub_field('link');
                                 @endphp
-                                <div class="col-12 col-md-6 d-flex">
-                                    <div>
+                                <div class="col-12 col-md-6">
+                                <div class="image-container flex-column" style="width: 100%; height: 250px; display: flex;">
                                        
                                         @if (!empty($image))
-                                            <img class="rounded-0" src="{{ esc_url($image['url']) }}"
-                                                alt="{{ esc_attr($image['alt']) }}" style="" />
+                                            <img class="rounded-0 img-fluid" src="{{ esc_url($image['url']) }}"
+                                                alt="{{ esc_attr($image['alt']) }}" style="width: 100%; min-height: 250px; object-fit: cover;">
                                         @endif
+                                </div>
 
                                         @if ($title)
                                             <h4 class="p-0 mb-2 mt-4 fs-55 font-bold">{!! $title !!}</h4>
@@ -67,7 +68,6 @@
                                             <a class="btn btn-brown right-arrow mt-0 position-relative"
                                                 href="{{ esc_url($link_url) }}">{{ esc_html($link_title) }}</a>
                                         @endif
-                                    </div>
                                 </div>
                             @endwhile
                         @endif
