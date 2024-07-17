@@ -16,7 +16,7 @@
                 <div class="col-12 col-lg-4 mb-5">
                     <h2 class="hero-eyebrow text-start pb-3">{!! $eyebrow !!}</h2>
                     <h3 class="font-black fs-1 pb-4 pe-lg-5 me-lg-5">{!! $header !!}</h3>
-                    <p>{{ $description }}</p>
+                    <p>{!! $description !!}</p>
                     <div class="mx-auto">
                         @php
                             $link = get_sub_field('link');
