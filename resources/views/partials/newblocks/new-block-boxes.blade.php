@@ -8,14 +8,14 @@
 
     @endphp
 
-    <section class="block-boxes in-page-section px-lg-4 px-4 px-md-0 py-5 my-5 in-page-section"
+    <section class="block-boxes in-page-section px-lg-4 px-4 px-md-0 pb-5 mb-5 in-page-section"
         id="list-{{ get_row_index() }}" data-section-name="">
         <div class="container">
             <div class="row">
-                <!-- First column (33% width) -->
-                <div class="col-12 col-lg-4 mb-5">
-                    <h2 class="hero-eyebrow text-start pb-3">{!! $eyebrow !!}</h2>
-                    <h3 class="font-black fs-1 pb-4 pe-lg-5 me-lg-5">{!! $header !!}</h3>
+                @if ($header) 
+                <div class="col-12 pt-5 mb-5 text-center">
+                    <h2 class="hero-eyebrow pb-3">{!! $eyebrow !!}</h2>
+                    <h3 class="font-black fs-1 pb-4">{!! $header !!}</h3>
                     <p>{!! $description !!}</p>
                     <div class="mx-auto">
                         @php
@@ -34,8 +34,9 @@
                         @endif
                     </div>
                 </div>
-                <!-- Second column (rest of the width) -->
-                <div class="col-12 col-lg-8">
+                @endif
+                @if (have_rows('boxes'))
+                <div class="col-12 col-lg-8 mx-auto">
                     <div class="row g-5">
 
                         @if (have_rows('boxes'))
@@ -49,7 +50,6 @@
                                 @endphp
                                 <div class="col-12 col-md-6">
                                 <div class="image-container flex-column" style="width: 100%; height: 250px; display: flex;">
-                                       
                                         @if (!empty($image))
                                             <img class="rounded-0 img-fluid" src="{{ esc_url($image['url']) }}"
                                                 alt="{{ esc_attr($image['alt']) }}" style="width: 100%; min-height: 250px; object-fit: cover;">
@@ -73,6 +73,7 @@
                         @endif
                     </div>
                 </div>
+                @endif
             </div>
         </div>
     </section>
