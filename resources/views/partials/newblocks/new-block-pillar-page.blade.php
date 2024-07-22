@@ -26,7 +26,7 @@
                 </div>
             </div>
         @elseif ($video_embed)
-            <video style="width: 100vw; height: 100vh; object-fit: cover;" id="hero-video" class="video-bg" autoplay loop muted playsinline  controls="true" onplay="hideBackgroundImage()">
+            <video style="width: 100vw; height: 100vh; object-fit: cover;" id="hero-video" class="video-bg" autoplay loop muted playsinline onplay="hideBackgroundImage()">
                 <source src="{{ $video_embed }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
