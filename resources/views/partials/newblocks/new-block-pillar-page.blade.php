@@ -32,7 +32,7 @@
             </video>
         @endif
 
-        <h1 class="text-white mb-3 mb-lg-4 position-absolute" style="bottom: 5%; right: 10%; z-index: 9999;">{{ the_sub_field('hero_title') }}</h1>
+        <h1 class="text-white mb-3 mb-lg-4 position-absolute m-md-0" style="bottom: 5%; right: 10%; z-index: 9999;">{{ the_sub_field('hero_title') }}</h1>
     </section>
 
     <script>
