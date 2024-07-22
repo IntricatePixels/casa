@@ -17,7 +17,7 @@
     <div class="footer-copyright px-5 mt-5">
         <div class="container">
             <div class="row p-0">
-                <p>&copy; All rights reserved.</p>
+                <p class="text-white">&copy; All rights reserved.</p>
             </div>
         </div>
     </div>
