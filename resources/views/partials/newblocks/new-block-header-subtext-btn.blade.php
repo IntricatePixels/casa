@@ -2,7 +2,7 @@
     <section id="header-{{ get_row_index() }}" class="block block-header-subtext py-5 @php the_sub_field('bgcolor') @endphp">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col px-5 px-lg-0">
                     @if (get_sub_field('header'))
                         <h2 class="text-center py-5 text-capitalize font-black fs-1">@php the_sub_field('header') @endphp</h2>
                     @endif

@@ -24,7 +24,7 @@
             <div class="col-12 mt-lg-5">
                 <p class="hero-eyebrow">{{ the_sub_field('header_eyebrow') }}</p>
                 <h2 class="mb-3 pt-0 mt-0 font-black text-center">{{ the_sub_field('header') }}</h2>
-                <div class="text-md-center mb-5 py-3">{{ the_sub_field('subhead') }}</div>
+                <div class="text-center mb-5 py-3">{{ the_sub_field('subhead') }}</div>
             </div>
             <div class="row gx-5 gy-4">
                 @if (have_rows('grid'))
@@ -37,7 +37,7 @@
                             $link = get_sub_field('link');
                         @endphp
                         <div class="col-12 col-md-6 col-lg-3 border-end-custom">
-                            <div class="post-card-content py-5 px-3">
+                            <div class="post-card-content py-lg-5 py-3 px-lg-3">
                                 @if ($image)
                                     <img src="{{ esc_url($image['url']) }}" alt="{{ esc_attr($image['alt']) }}" class="product-block mb-0 size-product-block" loading="lazy" />
                                 @endif
