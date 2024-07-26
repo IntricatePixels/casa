@@ -24,6 +24,7 @@
             </div>
           </div>
           @endif
+          
           <div class="row g-5 pb-5">
               @if (have_rows('grid'))
                   @while (have_rows('grid'))
