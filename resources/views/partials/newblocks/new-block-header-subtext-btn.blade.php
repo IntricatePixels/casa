@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col px-5 px-lg-0">
                     @if (get_sub_field('header'))
-                        <h2 class="text-center py-5 text-capitalize font-black fs-1">@php the_sub_field('header') @endphp</h2>
+                        <h2 class="text-center py-5 font-black fs-1">@php the_sub_field('header') @endphp</h2>
                     @endif
                     @if (get_sub_field('subtext'))
                         <div class="max-width-700 mx-auto text-center mb-5 fs-5">@php the_sub_field('subtext') @endphp</div>
