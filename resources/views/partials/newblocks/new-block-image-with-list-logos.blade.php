@@ -51,10 +51,9 @@
                         $link = get_sub_field('link');
                         $logo_icon_image = get_sub_field('logo_icon_image');
                       @endphp
-                        <div class="pb-3 position-relative @if ($count > 1 ) ps-4 ps-lg-5 @if ($fields_count != $count) border-dotted @endif @endif">
-                          <div class="ps-3 ps-lg-0">
+                        <div class="pb-3 position-relative @if ($count > 1 ) @if ($fields_count != $count) border-dotted @endif @endif">
                             @if ($logo_icon_image)
-                              <img width="45" height="45" class="logo-icon-image" src="{{ esc_url($logo_icon_image['url']) }}" alt="{{ esc_attr($logo_icon_image['alt']) }}" loading="lazy" />
+                              <img width="45" height="45" class="logo-icon-image" src="{{ esc_url($logo_icon_image['url']) }}" alt="{{ esc_attr($logo_icon_image['alt']) }}" loading="lazy" style="width: 50px;" />
                             @endif
                             @if ($title)
                               <h4 class="p-0 mb-2 fs-5 font-bold @if ( get_row_index() != 1 ) @endif">{!! $title !!}</h4>
@@ -70,7 +69,6 @@
                                 <a class="btn btn-brown right-arrow mt-5" href="@php echo esc_url( $link_url ) @endphp"
                                 target="@php echo esc_attr( $link_target ) @endphp">@php echo esc_html( $link_title ) @endphp @asset('images/arrow-right-long-regular.svg')</a>
                             @endif
-                          </div>
                         </div>
 
                   @php $fields_count++; @endphp
