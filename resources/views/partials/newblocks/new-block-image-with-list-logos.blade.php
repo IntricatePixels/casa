@@ -19,6 +19,7 @@
                 @if ($subhead)
                   <div>{!! $subhead !!}</div>
                 @endif
+                
           </div>
           @endif
           <div class="row g-5">
